@@ -1,0 +1,61 @@
+#previo_reflexiones{
+	width: 47%;
+	background-color: $blanco;
+	min-height: 100px;
+	padding: 10px;
+	boder-bottom: 1px solid $grisoscuro;
+	margin-bottom: 4px;
+}
+
+
+#previo_reflexiones .contenido h2 a{
+	color: $celeste;
+	line-height: 1.5em;
+	font-size: 1em;	
+}
+
+#previo_reflexiones .contenido h2 a:hover
+{
+	color: $rosa;
+	@include transicion_a();
+}
+
+#previo_reflexiones .contenido p{
+  line-height: 1.5em;
+  font-size: 1.2em;
+  color: #404040;
+  font-family: 'quattrocento_sansregular';
+}
+
+#previo_reflexiones .contenido .thumb{
+	float:left;
+	@include circulo();
+	width: 141px;
+	height: 141px;
+	@include sombra();
+	display:block;
+	margin:0px 7px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	@include borde(2px,$grisclaro);
+}
+
+#previo_reflexiones .contenido .thumb:hover{
+	@include transicion_a();
+}
+
+#previo_reflexiones .contenido #dia{
+	color: $grisoscuro;
+}
+
+#previo_reflexiones .contenido .thumb img{
+	@include circulo();
+	width: 100%;
+	height: 100%;
+}
+
+#previo_reflexiones .contenido .thumb img:hover{
+	@include transicion_a();
+	@include opacidad(50);
+}
+
+

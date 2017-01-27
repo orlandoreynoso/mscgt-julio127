@@ -1,23 +1,17 @@
-#contenido_general #der p{
-    line-height: 1.625em;
-    color: #302f2f;
-    font-size: 1.0625em;
-    margin-bottom: 1em;
-}
-
-
-#contenido_general #der img{
-  max-width: 100%;
-  height: auto;
-}
-
-
 #contenido_general #der #interiores{
 	padding:20px;
 	box-sizing: border-box;
 	overflow:hidden;
 	text-align: justify;
 }
+
+#contenido_general #der p{
+  line-height: 1.625em;
+  color: #302f2f;
+  font-size: 1.0625em;
+  margin-bottom: 1em;
+}
+
 
 #contenido_general #der #interiores .alignleft{
 	float: left;
@@ -37,19 +31,46 @@
 	width: 100%;
 }
 
-#contenido_general #der #interiores p img{
-  @include borde(3px,$blanco);
-  @include sombra();
+
+#contenido_general #der img {
+  max-width: 100%;
+  height: auto;
 }
 
-/*
+#contenido_general #der #interiores .alignleft {
+  float: left;
+  margin: 20px 20px 20px 0px;
+}
+
+#contenido_general #der #interiores .alignright {
+  float: right;
+  margin: 20px 0px 20px 20px;
+}
+
+#contenido_general #der #interiores p img.aligncenter {
+  text-align: center;
+  margin: 0px auto;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+#contenido_general #der #interiores p img {
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+/*=========================================================*/
+
 #contenido_general #der #interiores a{
-  color:$celeste; 
-}*/
+	color:$celeste;	
+}
 
 #contenido_general #der #interiores a:hover{
-  @include transicion_a();
-  color: $rosa;
+	@include transicion_a();
+	color: $rosa;
 }
 
 #contenido_general #der #interiores a img{
@@ -62,6 +83,7 @@
   @include transicion_a();
   @include sombra();
 }
+
 
 
 #contenido_general #der #interiores form{

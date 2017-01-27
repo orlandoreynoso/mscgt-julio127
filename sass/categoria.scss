@@ -166,44 +166,25 @@
 }
 
 
-#contenido_general #der h3.sd-title{
-	color: $celeste;
-	margin: 0px;
-	padding:0px 0px 6px 0px;
-}
-
-/*#contenido_general #der #interiores */hr{
-	color: $celeste;
-}
-
-
-
-#contenido_general #der h1{
+#contenido_general #der h2{
 	font-weight:bold;
 	font-size: 1.8em;
 	margin:15px 0px 10px 0px;
 	padding:8px 0px 0px 10px;
-	color: $verde2;
-}
-
-
-#contenido_general #der h2{
-	font-weight:bold;
-	font-size: 1.5em;
-	margin:15px 0px 10px 0px;
-	padding:8px 0px 0px 10px;
 	color: $celeste;
+	line-height: 1.1em;
+	text-align:left;
 }
 
-
-#contenido_general #der h3{
+#contenido_general #der h1{
 	font-weight:bold;
-	font-size: 1.17em;
+	font-size: 1.8em;
+	line-height: 1.1em;
 	margin:15px 0px 10px 0px;
 	padding:8px 0px 0px 10px;
-	color: $rosa;
+	color: $verde2;
+	text-align:left;	
 }
-
 
 #der .entrada-noticias{
 	background-color: $blanco;

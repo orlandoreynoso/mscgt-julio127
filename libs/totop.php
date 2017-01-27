@@ -7,13 +7,13 @@
     add_action( 'wp_head', 'back_to_top_style' );
     function back_to_top_style() {
     echo '<style type="text/css">
-    #totop {/*
+    #totop {
         position: fixed;
         right: 30px;
         bottom: 50%;
         display: none;
         outline: none;
-    } */
+    }
     </style>';
     }
     add_action( 'wp_footer', 'back_to_top_script' );

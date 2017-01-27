@@ -1,100 +1,62 @@
-<!-- Archivo de cabecera gobal de Wordpress -->
-<?php get_header(); ?>
+<?php 
+
+/*
+  Template Name: 404
+  Template Post Type: post, page, product
+*/
+
+ get_header();
+
+?>
 
 
-<!-- ****************Actual******************** -->
+<section class="con-general">
 
-
-
-<section>
-
-<div class="zerogrid" id="contenido_general">
-<div id="der">
-
-  <div id="titulo">
-    <div class="mapeo"><?php the_breadcrumb(); ?></div>
-  </div>    
-
-  <div id="interiores">
-    <?php // echo  'estoy en single';      ?>    
-
-
-<div class="descripcion_categoria">
-    <div id="name_cat">
-      <span>Categoria &raquo; </span>
-      <a class="cat"><?php the_category (); ?></a>
-    </div>    
-    <div id="fecha">
-      <span class="icon">&raquo;</span>    
-      <span class="date"><?php the_time('j F, Y'); ?></span>  
-    </div>
-</div>
-
-<?php if ( have_posts() ) : ?>
-
-
-
-    <?php while ( have_posts() ) : the_post(); ?>
-
-<div class="entrada-noticias">
-
-  <div class="fecha">
-    <span class="label1"><?php the_time('j  '); ?></span> de
-    <span class="label2"><?php the_time('F '); ?></span>
-    <span class="label2"><?php the_time('Y '); ?></span>
-  </div>
-
-  <div class="contenido">
-      <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-      <div class="con">
-        <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        <div id="info"><?php the_excerpt();  ?></div>
-      </div>      
-  </div>
-
-   
-</div>
-
-    <?php endwhile; ?>
-
-
-
-    <div class="pagination">
-      <span class="in-left"><?php next_posts_link('« Entradas antiguas'); ?></span>
-      <span class="in-right"><?php previous_posts_link('Entradas más recientes »'); ?></span>
-    </div>
-  
-
-
-<?php else : ?>
-  <p><?php _e('Ups!, no hay entradas.'); ?></p>
-<?php endif; ?>
-
-  </div>
-
-
-</div>
-<!-- **************************************** -->        
-    <div id="iz">
-        <div id="entradas">
-          <div id="titulo_entradas">
-            <h3>Entradas recientes</h3>
+  <div class="container">
+     <div class="row">
+          <div class="col-xs-12 col-md-8 con">
+          <div class="titulo">
+            <div class="mapeo"><?php the_breadcrumb(); ?></div>
           </div>
+          <?php echo '404'; ?>
+            <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-          <div id="recientes">
-            <?php get_sidebar('2'); ?>
-          </div>  
-        </div>
+           <div class="contenido">
+                  <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  <div class="date-cat">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 fecha"><i class="icon-date fa fa-calendar"></i><?php the_time('j F, Y'); ?></div>
+                        <div class="col-xs-12 col-md-6 descripcion_categoria"><i class="icon-file fa fa-file"></i><a class="cat"><?php the_category (' , '); ?></a></div>
+                    </div>
+                  </div>
+                  <div class="thumb">
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>              
+                  </div>
+                  <div class="info"><?php the_excerpt();  ?></div>
+            </div>   
+
+
+          <?php endwhile; ?>
+          <div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>
+          <?php else : ?>
+          <p><?php _e('Ups!, no hay entradas.'); ?></p>
+          <?php endif; ?>
+       </div>
+        <div class="col-xs-12 col-md-4 side">
+          <div class="entradas">
+            <div class="titulo_entradas">
+              <h3>Entradas recientes</h3>
+            </div>
+
+            <div class="recientes">
+              <?php get_sidebar(); ?>
+            </div>  
+          </div>        
+        </div>      
     </div>
-    
-       
   </div>
   
 </section>
 
-
-
-<!-- *********************************************** -->
-
-
-<?php get_footer(); ?>
+<?php get_footer();  ?>

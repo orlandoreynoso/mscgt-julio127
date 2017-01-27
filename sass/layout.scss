@@ -10,7 +10,6 @@ body{
 	background-color: #fff;
 }
 
-
 a{
 	color: $celeste;
 }
@@ -19,6 +18,7 @@ a:hover{
 	@include transicion_a();
 	color: $rosa;
 }
+
 
 .zerogrid{
 	max-width:1024px;
@@ -39,22 +39,6 @@ a:hover{
 header{
 	width: 100%;
 	background-color:#ffffff;
-}
-
-#welcome{
-	background-color:$blanco;
-	padding:20px;
-	display:flex;
-	flex-flow: row wrap;
-	box-sizing:border-box;
-	line-height: 1.4em;
-	font-size:1.2em;
-	border-top: 1px solid $rojo;
-	width:100%;
-}
-
-#welcome p{
-	text-align: justify;
 }
 
 #header{
@@ -284,35 +268,11 @@ article{
 	padding-bottom: 12px;	
 }
 
-
-#titulo_verde{
-	@include titulos($verde2,$grisclaro);
-	padding: 10px 0px 10px 10px;
-	font-size: 0.8em;
-	margin-bottom: 7px;
-	text-decoration:none;
-	border:2px solid white;
-
-	#name_cat{
-		display: flex;	}	
-
-	#date_cat{
-		margin-right: 7px;
-		font-size: 1.2em;
-	}
-}
-
-#titulo_reflexiones:hover{
-	border:2px solid green;
-}
-
 #titulo_reflexiones{
 	@include titulos($verde2,$grisclaro);
 	padding: 10px 0px 10px 10px;
 	font-size: 0.8em;
 	margin-bottom: 7px;
-	text-decoration:none;
-	border:2px solid white;
 
 	#name_cat{
 		display: flex;	}	
@@ -341,53 +301,20 @@ article{
 }
 
 /*=====================================*/
-#titulo_celeste{
-	@include titulos($celeste,$grisclaro);
-	padding: 10px 0px 10px 10px;
-	font-size: 0.8em;
-	margin-bottom: 7px;
-	text-decoration:none;
-	border:2px solid white;	
-
-	#name_cat{
-		display: flex;	
-	}	
-
-	#date_cat{
-		margin-right: 7px;
-		font-size: 1.2em;
-	}	
-}
-
-#titulo_celeste h3 span,#titulo_verde h3 span{ @include tit_span(); }
-
-#titulo_celeste h3,#titulo_verde h3{
-	margin-right:7px;
-	@include tit_h3($grisclaro);
-}
-
 #titulo_homilia{
 	@include titulos($celeste,$grisclaro);
 	padding: 10px 0px 10px 10px;
 	font-size: 0.8em;
 	margin-bottom: 7px;
-	text-decoration:none;
-	border:2px solid white;	
 
 	#name_cat{
-		display: flex;	
-	}	
+		display: flex;	}	
 
 	#date_cat{
 		margin-right: 7px;
 		font-size: 1.2em;
 	}	
 }
-
-#titulo_homilia:hover{
-	border:2px solid green;
-}
-
 
 #titulo_homilia h3 span{ @include tit_span(); }
 
@@ -471,13 +398,13 @@ article{
 
 #reflexiones .diario .contenido .thumb,
 #reflexiones .diario .contenido_homilia .thumb{
-	float:left;
+	float:right;
 	@include circulo();
 	width: 141px;
 	height: 141px;
 	@include sombra();
 	display:block;
-	margin:0px 7px 0px 0px;
+	margin:0px 0px 0px 7px;
 	padding: 0px 0px 0px 0px;
 	@include borde(2px,$grisclaro);
 }
@@ -536,7 +463,7 @@ article{
 #home #crecimiento .contenido{
 	background-color: $blanco;
 	box-sizing: border-box;
-	padding:20px 30px 20px 20px;
+	padding:10px;
 	line-height: 1.5em;
 	font-size: 1.2em;
 	color: #404040;
@@ -544,9 +471,88 @@ article{
 	text-align:justify;
 }
 
+#home #crecimiento .contenido h1{
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  margin: 15px 0px 10px 0px;
+  padding: 8px 0px 0px 10px;
+  color: #46b271;
+  text-align: left;
+}
+
+#home #crecimiento .contenido h2{
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 15px 0px 10px 0px;
+    padding: 8px 10px 0px 10px;
+    color: #009FFF;
+    line-height: 1.1em;
+    text-align: left;
+}
+
+#home #crecimiento .contenido h3{
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: 15px 0px 10px 0px;
+    padding: 8px 0px 0px 10px;
+    color: #d53132;
+    line-height: 1.1em;
+    text-align: left;
+}
+
+#home #crecimiento .contenido strong{
+
+} 
+
+
+#home #crecimiento .contenido p {
+  line-height: 1.625em;
+  color: #302f2f;
+  font-size: 1.0625em;
+  margin-bottom: 1em;
+}
+
+#home #crecimiento .contenido img {
+  max-width: 100%;
+  height: auto;
+}
+
+#home #crecimiento .contenido.alignleft {
+  float: left;
+  margin: 20px 20px 20px 0px;
+}
+
+#home #crecimiento .contenido.alignright {
+  float: right;
+  margin: 20px 0px 20px 20px;
+}
+
+#home #crecimiento .contenidop img.aligncenter {
+  text-align: center;
+  margin: 0px auto;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+#home #crecimiento .contenido p img {
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+
 #home #crecimiento .contenido .alignleft{ @include left(); }
 
 #home #crecimiento .contenido .alignright{ 	@include right(); }
+
+#home #crecimiento .contenido img{ 
+	@include sombra();
+	@include borde(3px, $blanco);
+}
+
 
 #home #crecimiento .contenido p img.aligncenter{ 
 	@include center(); 

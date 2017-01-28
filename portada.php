@@ -6,46 +6,49 @@ Template Post Type: post, page, product
 ?>
 <?php get_header(); ?>
 
-<section>
-	<article class="banner">
-		<?php  echo do_shortcode("[metaslider id=2677]");  ?>
-	</article>
-</section>
+<div class="slide">
+    <div class="row">
+      <div class="col-md-12">
+        <?php include (TEMPLATEPATH . '/libs/banner.php');   ?> 
+      </div>
+    </div>
+</div>
 
-<section class="iglesias">
-	<article class="selection">
-		<h3>Selecciona tu iglesia</h3>
-	</article>
-	<article class="tc-iglesias">
-			<div id="div1" class="ig-p">
-				<a href="<?php bloginfo('url'); ?>/category/tres-consejos/">
-					<img src="<?php echo IMAGES.'/tresconsejos.png'; ?>" alt="">
-					<span>Parroquia - Tres consejos</span>					
-				</a>
-			</div>
-			<div id="div1" class="ig-p">
-				<a href="<?php bloginfo('url'); ?>/molino-de-las-flores/">
-					<img src="<?php echo IMAGES.'/santuario.png'; ?>" alt="">
-					<span>Santuario NSSC</span>
-				</a>
-			</div>
-			<div id="div1" class="ig-p">
-				<a href="<?php bloginfo('url'); ?>/sede-parroquial-el-tesoro/">
-					<img src="<?php echo IMAGES.'/tesoro.png'; ?>" alt="">
-					<span>Sede Parroquial El Tesoro</span>
-				</a>
-			</div>
-			<div id="div1" class="ig-p">
-				<a href="<?php bloginfo('url'); ?>/rectoria-de-santa-rita/">
-					<img src="<?php echo IMAGES.'/santarita.png'; ?>" alt="">
-					<span>Rectoria de Santa Rita</span>
-				</a>
-			</div>
-	</article>
+<section class="info-parroquial">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<article>
+				<?php include (TEMPLATEPATH . '/libs/infoparroquial.php');  ?>
+			</article>					
+		</div>
+	</div>
+</div>	
 </section>
 
 <section class="espiritualidad">
+	<div class="container">
+		<div class="row cuadro-reflexiones">
+			<div class="col-md-12 reflexiones">
+				<div class="titulo">
+					<h3>Espiritualidad</h3>
+				</div>
+				<?php include TEMPLATEPATH.'/libs/homilias.php'; ?>
+				<?php include TEMPLATEPATH.'/libs/ref.php'; ?>
+			</div>
+		</div>
+	</div>
+</section>
 
+<section>
+	<div class="container">
+		<div class="row">
+			<p>relleno</p>
+		</div>
+	</div>
+</section>
+
+<section class="espiritualidad">
 	<article class="space" id="cuadro_reflexiones">
 		<div id="titulo_cuadro_reflexiones">
 			<h3>Espiritualidad</h3>
@@ -55,14 +58,14 @@ Template Post Type: post, page, product
 			/*====================  Inicia Seccion de homilia ============================*/
 			 include TEMPLATEPATH.'/libs/homilias.php';	
 			/*====================  inicia Seccion de reflexiones =========================*/ 
-	           include TEMPLATEPATH.'/libs/reflexiones.php';
+	         include TEMPLATEPATH.'/libs/reflexiones.php';
 			  // include TEMPLATEPATH.'/libs/mes1.php';
 			  // include TEMPLATEPATH.'/libs/mes2.php';			 
 			?>
 		</div>
-	</article>
-					
+	</article>					
 </section>
+
 <section class="crecimiento">
 	<article id="cuadro_reflexiones">
 		<div id="titulo_cuadro_crecimiento">

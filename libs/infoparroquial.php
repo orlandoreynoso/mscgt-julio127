@@ -1,30 +1,29 @@
 <div class="titulo-iglesia">
-	<h3>Anuncios parroquiales</h3>
+	<h3>Selecciona tu iglesia</h3>
 </div>
-<div class="c-info" id="iglesia">
-	<div id="div1">
-		<a href="<?php bloginfo('url'); ?>/horarios-de-misa">
-			<img src="<?php echo IMAGES.'/jesus.jpg'; ?>" alt="">
-			<span>Horario de misa</span>					
+<article class="c-info" id="iglesia">
+	<div id="div1" class="ig-p">
+		<a href="<?php bloginfo('url'); ?>/category/tres-consejos/">
+			<img src="<?php echo IMAGES.'/tresconsejos.png'; ?>" alt="">
+			<span>Parroquia - Tres consejos</span>					
 		</a>
 	</div>
-	<div id="div1">
-		<a href="<?php bloginfo('url'); ?>/boletin-parroquial/">
-			<img src="<?php echo IMAGES.'/boletin-parroquial.jpg'; ?>" alt="">
-			<span>Boletines parroquiales</span>
+	<div id="div1" class="ig-p">
+		<a href="<?php bloginfo('url'); ?>/molino-de-las-flores/">
+			<img src="<?php echo IMAGES.'/santuario.png'; ?>" alt="">
+			<span>Santuario NSSC</span>
 		</a>
 	</div>
-	<div id="div1">
-		<a href="<?php bloginfo('url'); ?>/editoriales/">
-			<img src="<?php echo IMAGES.'/pluma.jpg'; ?>" alt="">
-			<span>Editoriales</span>
+	<div id="div1" class="ig-p">
+		<a href="<?php bloginfo('url'); ?>/sede-parroquial-el-tesoro/">
+			<img src="<?php echo IMAGES.'/tesoro.png'; ?>" alt="">
+			<span>Sede Parroquial El Tesoro</span>
 		</a>
 	</div>
-	<!-- div id="div1">
+	<div id="div1" class="ig-p">
 		<a href="<?php bloginfo('url'); ?>/rectoria-de-santa-rita/">
-			<img src="<?php // echo IMAGES.'/santarita.png'; ?>" alt="">
+			<img src="<?php echo IMAGES.'/santarita.png'; ?>" alt="">
 			<span>Rectoria de Santa Rita</span>
 		</a>
-	</div -->
-
-</div>
+	</div>
+</article>

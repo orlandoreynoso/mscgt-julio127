@@ -87,6 +87,8 @@ if ( $the_query->have_posts() ) {
 /* Restore original Post Data */
  wp_reset_postdata();  
 }
+
+/*=================================================*/
 function obtener_categoria($nombre,$id){    ?>
     <div id="titulo_<?php echo $id; ?>">
         <div id="name_cat">
@@ -142,10 +144,10 @@ function get_laterales($pagina,$perpage, $titulo, $clase){
     <?php  
 }        
 /*==================================*/
-function create_page($pagina, $perpage){
+function create_page($paginaid, $perpage){
     $args = array(                
         'post_type' => 'page',
-        'post_parent'       => ''.$pagina.'',
+        'post_parent'       => ''.$paginaid.'',
         'posts_per_page'         => ''.$perpage.'',
     );  
     return $args;
@@ -242,5 +244,42 @@ function get_recomendaciones_name($pagename){
     <?php
       endwhile;
 } 
+
+/*================== Enviar =================================*/
+
+
+/*==========  Obtener homilia ==============================*/
+function obtener_homilia($nombre,$idcss,$pageid){    ?>
+
+    <?php 
+
+    $id = get_permalink($pageid);
+    $title = get_the_title($pageid);
+    $pageid;
+    
+    ?>   
+
+    <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
+    <div class="label"><i class="icon-file fa fa-file"></i><a href="<?php the_permalink(); ?>" class="cat"><?php the_title();  ?></a></div>
+    <div class="exe"><?php the_excerpt(); ?> </div>
+
+<?php /*
+    <a id="titulo_<?php echo $idcss; ?>" href="<?php bloginfo('url'); ?>/homilias/">
+        <div id="name_cat">
+            <h3>Entrar a  &raquo; <?php echo $nombre; ?> &raquo;</h3>
+        </div>
+        <div id="date_cat">
+            <span class="date">Publicación: <?php the_time('j F, Y'); ?></span>
+        </div>        
+    </a>
+      <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
+      <p>
+        <?php excerpt('22'); ?>...[<a href="<?php the_permalink(); ?>">.....</a>]
+      </p>
+*/ ?>
+
+<?php         
+}
 
 ?>

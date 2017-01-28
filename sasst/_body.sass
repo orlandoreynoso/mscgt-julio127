@@ -20,6 +20,84 @@
 		width: 100%
 		margin: 0px auto
 		vertical-align: top
+/*==============================*/
+@mixin ahora()				
+	.exe
+		margin-top: 10px
+	.thumb
+		width: 100%
+		height: auto
+		display: block
+		img
+			max-width: 100%
+			height: auto
+			margin: 0px auto
+			text-align: center
+			vertical-align: middle
+			display: block
+			&:hover
+				filter: alpha(opacity=50)
+				-moz-opacity: 1.0
+				opacity: 0.5
+				-khml-opacity: 1.0
+				transition: 0.5s ease
+				box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)					
+	.title
+		font-family: 'Oswald', sans-serif
+		font-size: 1.55em
+		color: $verde
+		width: 100%
+		text-align: center
+		display: block
+		margin: 10px auto
+		&:hover
+			color: $celeste
+	.label
+		width: 100%
+		padding: 15px 0px
+		display: block
+		text-align: left
+		.icon-file
+			margin-right: 10px
+			color: $verde2
+		a
+			color: $grisoscuro
+			&:hover
+				color: $verde		
+/*=======================================================*/		
+.espiritualidad
+	.cuadro-reflexiones
+		background-color: red
+		.reflexiones
+			background-color: $grisclaro
+			padding: 10px
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			box-sizing: border-box	
+			.titulo
+				text-align: center
+				width: 100%
+				@include titulo_cuadro($celeste)
+				h3
+					font-size: 1.2em
+					color: $blanco
+					text-transform: uppercase
+					font-family: 'Oswald', sans-serif
+					margin: 0px
+					padding: 0px
+			.actual
+				width: 50%
+				box-sizing: border-box
+				background-color: red
+				padding: 5px
+				@include ahora()
+			.list
+				width: 25%
+				padding: 20px
+				border-bottom: 1px solid $grismasclaro
+
+/*=======================================================*/
 .info-parroquial
 	.titulo-iglesia
 		text-align: center

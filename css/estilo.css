@@ -906,54 +906,54 @@ input[type=number]::-webkit-outer-spin-button {
       font-family: "Oswald", sans-serif;
       margin: 0px;
       padding: 0px; }
-.con-general .side .recientes {
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px; }
-  .con-general .side .recientes .thumb {
-    width: 20%; }
-    .con-general .side .recientes .thumb img {
-      height: auto;
-      display: inline-block;
-      float: left;
-      margin-right: 7px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-      border: 2px solid #ffffff;
-      width: 90%; }
-      .con-general .side .recientes .thumb img:hover {
-        filter: alpha(opacity=50);
-        -moz-opacity: 1;
-        opacity: 0.5;
-        -khml-opacity: 1;
-        transition: 0.5s ease;
-        box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
-  .con-general .side .recientes .title {
-    color: #009FFF;
-    line-height: 1.3em;
-    font-size: 1.1em;
-    text-decoration: none;
-    width: 78%;
-    text-transform: lowercase; }
-    .con-general .side .recientes .title:hover {
-      color: #d53132;
-      transition: 0.5s ease;
-      -o-transition: 0.5s ease;
-      -webkit-transition: 0.5s ease; }
-    .con-general .side .recientes .title:first-letter {
-      text-transform: uppercase; }
-  .con-general .side .recientes .list {
-    padding: 5px;
-    margin-bottom: 5px;
-    padding-bottom: 9px;
-    overflow: hidden;
-    border-bottom: 1px solid #009FFF;
-    text-transform: lowercase;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box; }
+  .con-general .side .entradas .recientes {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px; }
+    .con-general .side .entradas .recientes .list {
+      padding: 5px;
+      margin-bottom: 5px;
+      padding-bottom: 9px;
+      overflow: hidden;
+      border-bottom: 1px solid #009FFF;
+      text-transform: lowercase;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box; }
+      .con-general .side .entradas .recientes .list .thumb {
+        width: 20%; }
+        .con-general .side .entradas .recientes .list .thumb img {
+          width: 90%;
+          height: auto;
+          display: inline-block;
+          float: left;
+          margin-right: 7px;
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+          border: 2px solid #ffffff; }
+          .con-general .side .entradas .recientes .list .thumb img:hover {
+            filter: alpha(opacity=50);
+            -moz-opacity: 1;
+            opacity: 0.5;
+            -khml-opacity: 1;
+            transition: 0.5s ease;
+            box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
+      .con-general .side .entradas .recientes .list .title {
+        color: #009FFF;
+        line-height: 1.3em;
+        font-size: 1.1em;
+        text-decoration: none;
+        width: 78%;
+        text-transform: lowercase; }
+        .con-general .side .entradas .recientes .list .title:hover {
+          color: #d53132;
+          transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          -webkit-transition: 0.5s ease; }
+        .con-general .side .entradas .recientes .list .title:first-letter {
+          text-transform: uppercase; }
 
 /*------------------------------------ */
 /*---- */
@@ -1179,7 +1179,34 @@ footer {
   .recomen .c-recomendaciones {
     flex-flow: column wrap; }
     .recomen .c-recomendaciones .list {
-      width: 100%; } }
+      width: 100%; }
+
+  .espiritualidad {
+    box-sizing: border-box; }
+    .espiritualidad .cuadro-reflexiones {
+      box-sizing: border-box; }
+      .espiritualidad .cuadro-reflexiones .reflexiones {
+        box-sizing: border-box; }
+        .espiritualidad .cuadro-reflexiones .reflexiones .actual {
+          box-sizing: border-box; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .thumb {
+            width: 100%;
+            height: auto;
+            display: block; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .thumb img {
+              width: 100%;
+              display: block; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label {
+            overflow: hidden; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file2 {
+              margin-right: 2px;
+              margin-left: 2px;
+              color: #46b271; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file3 {
+              margin-right: 2px;
+              color: #009FFF; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file4 {
+              clear: both; } }
 @media screen and (max-width: 768px) {
   .m-header .ls {
     margin: 0px auto;

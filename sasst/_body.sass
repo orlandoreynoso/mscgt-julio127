@@ -61,30 +61,45 @@
 		.icon-file
 			margin-right: 10px
 			color: $verde2
+		.icon-file2
+			margin-right: 10px
+			margin-left: 10px
+			color: $verde2			
+		.icon-file3
+			margin-right: 10px
+			color: $celeste
+		.icon-file4
+			margin-right: 10px
+			margin-left: 10px
+			color: $rosa		
+		.dia
+			margin-right: 10px
+			color: $verde			
 		a
 			color: $grisoscuro
 			&:hover
-				color: $verde		
+				color: $verde
 /*=======================================================*/		
 .espiritualidad
 	box-sizing: border-box
 	.cuadro-reflexiones
 		background-color: $blanco
-		box-sizing: border-box		
+		box-sizing: border-box
+		margin-top: 10px
+		.titulo
+			text-align: center
+			width: 100%
+			@include titulo_cuadro($celeste)
+			h3
+				font-size: 1.2em
+				color: $blanco
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 0px
+				padding: 0px
 		.reflexiones
-			background-color: $grismasclaro
+			background-color: $blanco
 			box-sizing: border-box
-			.titulo
-				text-align: center
-				width: 100%
-				@include titulo_cuadro($celeste)
-				h3
-					font-size: 1.2em
-					color: $blanco
-					text-transform: uppercase
-					font-family: 'Oswald', sans-serif
-					margin: 0px
-					padding: 0px
 			.actual
 				box-sizing: border-box
 				background-color: $blanco

@@ -152,6 +152,8 @@ function create_page($paginaid, $perpage){
     );  
     return $args;
 }
+
+/*==================================================*/
 function dia($numero){
 switch ($numero) {
     case '1':
@@ -174,6 +176,9 @@ switch ($numero) {
         break;
 }
 }
+
+/*====================================================*/
+
 function get_agrupaciones($pagina, $perpage){
     $args = array(                
         'post_type' => 'page',

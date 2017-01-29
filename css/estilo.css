@@ -336,22 +336,23 @@ input[type=number]::-webkit-outer-spin-button {
   box-sizing: border-box; }
   .espiritualidad .cuadro-reflexiones {
     background-color: #ffffff;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-top: 10px; }
+    .espiritualidad .cuadro-reflexiones .titulo {
+      text-align: center;
+      width: 100%;
+      background-color: #009FFF;
+      padding: 24px 0px 17px 25px; }
+      .espiritualidad .cuadro-reflexiones .titulo h3 {
+        font-size: 1.2em;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        margin: 0px;
+        padding: 0px; }
     .espiritualidad .cuadro-reflexiones .reflexiones {
-      background-color: #e9e9e9;
+      background-color: #ffffff;
       box-sizing: border-box; }
-      .espiritualidad .cuadro-reflexiones .reflexiones .titulo {
-        text-align: center;
-        width: 100%;
-        background-color: #009FFF;
-        padding: 24px 0px 17px 25px; }
-        .espiritualidad .cuadro-reflexiones .reflexiones .titulo h3 {
-          font-size: 1.2em;
-          color: #ffffff;
-          text-transform: uppercase;
-          font-family: "Oswald", sans-serif;
-          margin: 0px;
-          padding: 0px; }
       .espiritualidad .cuadro-reflexiones .reflexiones .actual {
         box-sizing: border-box;
         background-color: #ffffff;
@@ -396,6 +397,20 @@ input[type=number]::-webkit-outer-spin-button {
           .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file {
             margin-right: 10px;
             color: #008831; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file2 {
+            margin-right: 10px;
+            margin-left: 10px;
+            color: #008831; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file3 {
+            margin-right: 10px;
+            color: #009FFF; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file4 {
+            margin-right: 10px;
+            margin-left: 10px;
+            color: #d53132; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .dia {
+            margin-right: 10px;
+            color: #46b271; }
           .espiritualidad .cuadro-reflexiones .reflexiones .actual .label a {
             color: #333333; }
             .espiritualidad .cuadro-reflexiones .reflexiones .actual .label a:hover {

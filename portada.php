@@ -29,10 +29,10 @@ Template Post Type: post, page, product
 <section class="espiritualidad">
 	<div class="container">
 		<div class="row cuadro-reflexiones">
+			<div class="titulo">
+				<h3>Espiritualidad</h3>
+			</div>
 			<div class="col-md-12 reflexiones">
-				<div class="titulo">
-					<h3>Espiritualidad</h3>
-				</div>
 					<?php include TEMPLATEPATH.'/libs/homilias.php'; ?>
 					<?php include TEMPLATEPATH.'/libs/reflexiones.php'; ?>			
 			</div>

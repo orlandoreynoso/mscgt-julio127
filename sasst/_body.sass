@@ -21,7 +21,7 @@
 		margin: 0px auto
 		vertical-align: top
 /*==============================*/
-@mixin ahora()				
+@mixin ahora($color1,$color2,$color3)				
 	.exe
 		margin-top: 10px
 	.thumb
@@ -46,13 +46,13 @@
 	.title
 		font-family: 'Oswald', sans-serif
 		font-size: 1.55em
-		color: $verde
+		color: $color1
 		width: 100%
 		text-align: center
 		display: block
 		margin: 10px auto
 		&:hover
-			color: $celeste
+			color: $color2
 	.label
 		width: 100%
 		padding: 15px 0px
@@ -60,25 +60,25 @@
 		text-align: left
 		.icon-file
 			margin-right: 10px
-			color: $verde2
+			color: $color1
 		.icon-file2
 			margin-right: 10px
 			margin-left: 10px
-			color: $verde2			
+			color: $color1
 		.icon-file3
 			margin-right: 10px
-			color: $celeste
+			color: $color2
 		.icon-file4
 			margin-right: 10px
 			margin-left: 10px
-			color: $rosa		
+			color: $color3		
 		.dia
 			margin-right: 10px
-			color: $verde			
+			color: $color1			
 		a
 			color: $grisoscuro
 			&:hover
-				color: $verde
+				color: $color1
 /*=======================================================*/		
 .espiritualidad
 	box-sizing: border-box
@@ -105,12 +105,114 @@
 				background-color: $blanco
 				padding: 20px
 				margin-bottom: 10px				
-				@include ahora()
+				@include ahora($verde,$celeste,$rosa)
 			.list
 				width: 25%
 				padding: 20px
 				border-bottom: 1px solid $grismasclaro
+/*=================== CRECIMIENTO =========================*/
+.last
+	box-sizing: border-box
+	.cuadro-last
+		background-color: $blanco
+		box-sizing: border-box
+		margin-top: 10px
+		.titulo
+			text-align: center
+			width: 100%
+			@include titulo_cuadro($verde)
+			h3
+				font-size: 1.2em
+				color: $blanco
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 0px
+				padding: 0px
+		.contenido
+			background-color: $blanco
+			box-sizing: border-box
+			padding-top: 10px
+			.actual
+				box-sizing: border-box
+				background-color: $blanco
+				@include ahora($celeste,$verde,$rosa)
+				padding: 5px
+				margin: 0px 0px 10px 0px
+				border-bottom: 1px solid $grismasclaro
+				.thumb
+					width: 100%
+					max-height: 150px
+					display: block
+					img
+						width: 100%
+						max-height: auto
+						margin: 0px auto
+						text-align: center
+						vertical-align: middle
+						display: block
+						&:hover
+							filter: alpha(opacity=50)
+							-moz-opacity: 1.0
+							opacity: 0.5
+							-khml-opacity: 1.0
+							transition: 0.5s ease
+							box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)					
+				.title
+					font-family: 'Oswald', sans-serif
+					font-size: 1.1em
+					color: $celeste
+					width: 100%
+					text-align: center
+					display: block
+					margin: 10px auto
+					padding-bottom: 2px
+					min-height: 70px
+					&:hover
+						color: $verde
+					h3
+						font-size: 1.2em
+						color: $blanco
+						text-transform: uppercase
+						font-family: 'Oswald', sans-serif
+						margin: 0px
+						padding: 0px
+			.list
+				width: 25%
+				padding: 20px
+				border-bottom: 1px solid $grismasclaro
+/*=================== NOTICIAS =========================*/
 
+.crecimiento
+	box-sizing: border-box
+	.cuadro-crecimiento
+		background-color: $blanco
+		box-sizing: border-box
+		margin-top: 10px
+		.titulo
+			text-align: center
+			width: 100%
+			@include titulo_cuadro($rosa)
+			h3
+				font-size: 1.2em
+				color: $blanco
+				text-transform: uppercase
+				font-family: 'Oswald', sans-serif
+				margin: 0px
+				padding: 0px
+		.contenido
+			background-color: $blanco
+			box-sizing: border-box
+			padding-top: 10px
+			.actual
+				box-sizing: border-box
+				background-color: $blanco
+				padding: 20px
+				margin-bottom: 10px				
+				@include ahora($celeste,$verde,$rosa)
+			.list
+				width: 25%
+				padding: 20px
+				border-bottom: 1px solid $grismasclaro
 /*=======================================================*/
 .info-parroquial
 	.titulo-iglesia

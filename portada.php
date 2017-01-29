@@ -29,9 +29,7 @@ Template Post Type: post, page, product
 <section class="espiritualidad">
 	<div class="container">
 		<div class="row cuadro-reflexiones">
-			<div class="titulo">
-				<h3>Espiritualidad</h3>
-			</div>
+			<div class="titulo"><h3>Espiritualidad</h3></div>
 			<div class="col-md-12 reflexiones">
 					<?php include TEMPLATEPATH.'/libs/homilias.php'; ?>
 					<?php include TEMPLATEPATH.'/libs/reflexiones.php'; ?>			
@@ -40,40 +38,62 @@ Template Post Type: post, page, product
 	</div>
 </section>
 
+
 <section class="crecimiento">
 	<div class="container">
-		<div class="row">
-			<article id="cuadro_reflexiones">
-				<div id="titulo_cuadro_crecimiento">
-					<h3>Crecimiento</h3>
-				</div>
-				<div class="zerogrid" id="reflexiones">
-				<?php $the_query = new WP_Query(create_page(1326,1));  	?>
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-					<div class="diario">
-					  <div class="contenido_homilia"><?php obtener_pagina('Crecimiento cristiano','verde');  ?></div>
-					</div>
-				<?php endwhile;?>
-				<?php $the_query = new WP_Query(create_page(1300,1));  	?>
-				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-					<div class="diario">
-					  <div class="contenido"><?php obtener_categoria('La mision MSC','celeste');  ?></div>
-					</div>
-				<?php endwhile;?>
-				</div>	
-			</article>			
-		</section>
-		<section class="news">
-			<article id="home_entry" class="zerogrid">
+		<div class="row cuadro-crecimiento">
+			<div class="titulo"><h3>Crecimiento</h3></div>
+			<div class="contenido">
+				<div class="actual col-xs-12 col-md-6">
+					<?php $the_query = new WP_Query(create_page(1326,1));  	?>
+					<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+					<?php 
+					    $id = get_permalink(1326);
+					    $title = get_the_title(1326);
+				     ?>
 
-						<div id="titulo_entradas">
-							<h3>últimas noticias</h3>
-						</div>				
-						<div id="recientes">
-							   <?php get_sidebar('3'); ?>
-						</div>	
-			</article>
+					<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
+		    		<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
+					<div class="label">
+						<i class="icon-file2 fa fa-link"></i>				
+						<a href="<?php bloginfo('url'); ?>/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
+					</div>
+					<div class="exe"><?php the_excerpt(); ?></div>
+					<?php endwhile;?>
+				</div>
+				<div class="actual col-xs-12 col-md-6">
+					<?php $the_query = new WP_Query(create_page(1300,1));  	?>
+					<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
+					<?php 
+					    $id = get_permalink(1300);
+					    $title = get_the_title(1300);
+				     ?>
+
+					<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
+		    		<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
+					<div class="label">
+						<i class="icon-file2 fa fa-link"></i>				
+						<a href="<?php bloginfo('url'); ?>/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
+					</div>
+					<div class="exe"><?php the_excerpt(); ?></div>
+					<?php endwhile;?>				
+				</div>
+			</div>
 		</div>
-	</div>	
+	</div>
 </section>
+
+<section class="last">
+	<div class="container">
+		<div class="row cuadro-last">
+			<div class="titulo"><h3>últimas noticias</h3></div>
+			<div class="contenido">
+				<?php get_sidebar('3'); ?>		
+			</div>
+		</div>
+	</div>
+</section>
+
+
 <?php get_footer(); ?>

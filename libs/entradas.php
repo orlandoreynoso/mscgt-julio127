@@ -76,8 +76,8 @@ if ( $the_query->have_posts() ) {
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
-<div class="list">
-    <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a> 
+<div class="actual col-xs-12 col-md-3">
+    <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 </div>
         <?php }} else {
@@ -286,5 +286,6 @@ function obtener_homilia($nombre,$idcss,$pageid){    ?>
 
 <?php         
 }
+
 
 ?>

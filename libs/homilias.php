@@ -8,23 +8,22 @@ $day = $perpage_actually-1;
 $the_query = new WP_Query(create_page($page_actually,$perpage_actually)); 
 
 ?>
-<div class="actual">
+
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 	  	<?php // obtener_homilia('Homilias','homilia',$page_actually);  ?>
-
+<div class="actual col-xs-12 col-md-4">
     <?php 
 
-    $id = get_permalink($pageid);
-    $title = get_the_title($pageid);
-    $pageid;
-    
+    $id = get_permalink($page_actually);
+    $title = get_the_title($page_actually);
+    echo $pageid;
     ?>   
 
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
-    <div class="label"><i class="icon-file fa fa-file"></i><a href="<?php the_permalink(); ?>" class="cat"><?php the_title();  ?></a></div>
-    <div class="exe"><?php the_excerpt(); ?> </div>
-
-<?php endwhile;?>
+            <div class="label"><i class="icon-file fa fa-file"></i><a href="<?php bloginfo('url'); ?>/homilias/" class="cat"><?php echo $title;  ?></a></div>
+    <div class="exe"><?php excerpt('22'); ?>...[<a href="<?php the_permalink(); ?>"> .....</a>]</div>
 </div>
+<?php endwhile;?>
+
 

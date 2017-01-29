@@ -13,16 +13,16 @@ $the_query = new WP_Query(create_page($month_actually,$perpage_actually));
 	
 ?>		
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-	<div class="123">
+	<div class="actual">
 	  <div class="contenido">
 
 <?php 
-	  	echo '<pre>';
+	  	//echo '<pre>';
   	//	var_dump($the_query);
-		echo '<p>--</p>';  	
-		$tu	=  $the_query["query"];
-		echo $tu;
-		echo 'bli----bli';
+		//echo '<p>--</p>';  	
+	//	$tu	=  $the_query["query"];
+		//echo $tu;
+		//echo 'bli----bli';
  ?>
 
 		<a id="titulo_reflexiones" href="<?php bloginfo('url'); ?>/reflexiones/">

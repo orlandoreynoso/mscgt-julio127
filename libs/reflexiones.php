@@ -1,11 +1,16 @@
 <?php 
 /*
-$month_actually = 3444;
-$perpage_actually = 5;
-$day = 0; */
+dia 0: para el dia lunes
+dia 1: para el dia martes
+dia 2: para el dia miercoles
+dia 3: para el dia jueves
+dia 4: para el dia viernes
+*/
+
 
 //2639: Febrero 2016
 //4170: Enero 2017
+//4300: Febrero 2017
 
 //$month_actually = 4170; 
 $month_actually = 2639;
@@ -23,17 +28,6 @@ $the_query = new WP_Query(create_page($month_actually,$perpage_actually));
     $id = get_permalink($month_actually);
     $title = get_the_title($month_actually);
 ?>
-
-	  	<?php /*
-		<a id="titulo_reflexiones" href="<?php bloginfo('url'); ?>/reflexiones/">
-		    <div id="name_cat">
-		        <h3>Entrar a &raquo;  <?php echo 'Reflexiones' ?> &raquo; <span id="dia"><?php echo dia($day = $day + 1); ?></span></h3>
-		    </div>
-		    <div id="date_cat">
-		        <span class="date">Publicación: <?php the_time('j F, Y'); ?></span>
-		    </div>        
-		</a>
-		*/ ?>
 
 			<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
     		<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 

@@ -13,6 +13,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/estilo.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" type="image/x-icon" />
-	<!-- script type='text/javascript' src='<?php // bloginfo('stylesheet_directory'); ?>/js/analitycs.js'></script -->
+	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/analitycs.js'></script>
 	<?php wp_head(); ?>
 </head>

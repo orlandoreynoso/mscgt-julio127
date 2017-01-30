@@ -1128,6 +1128,75 @@ footer {
     .tc-iconos .tci-evento span:nth-child(1) {
       margin-bottom: 3px; }
 
+/*============= */
+.titulo-consejo .mapeo {
+  padding: 15px;
+  background-color: #404040;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em; }
+  .titulo-consejo .mapeo a {
+    color: #46b271; }
+    .titulo-consejo .mapeo a:hover {
+      color: #73e6a1; }
+  .titulo-consejo .mapeo span {
+    margin: 0px 5px;
+    color: #ffffff; }
+
+/*========================== */
+.tc-iconos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #35985c;
+  margin: 0px auto;
+  height: auto; }
+  .tc-iconos .tci {
+    width: 20%;
+    padding: 60px 24px;
+    text-align: center;
+    font-family: "Oswald", sans-serif; }
+    .tc-iconos .tci:hover {
+      background-color: #46b271; }
+
+.tc-iconos .tci-agenda,
+.tc-iconos .tci-historia,
+.tc-iconos .tci-video,
+.tc-iconos .tci-foto,
+.tc-iconos .tci-evento {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  span: nth-child(2); }
+
+.tc-iconos .tci-agenda:hover,
+.tc-iconos .tci-historia:hover,
+.tc-iconos .tci-video:hover,
+.tc-iconos .tci-foto:hover,
+.tc-iconos .tci-evento:hover {
+  color: #d53132;
+  transition: 0.5s ease;
+  background-color: #46b271; }
+
+.tc-iconos .tci-agenda span,
+.tc-iconos .tci-historia span,
+.tc-iconos .tci-video span,
+.tc-iconos .tci-foto span,
+.tc-iconos .tci-evento span {
+  display: block; }
+
+.tc-iconos .tci-agenda span:nth-child(1),
+.tc-iconos .tci-historia span:nth-child(1),
+.tc-iconos .tci-video span:nth-child(1),
+.tc-iconos .tci-foto span:nth-child(1),
+.tc-iconos .tci-evento span:nth-child(1) {
+  margin-bottom: 3px; }
+
 .navigation {
   background-color: #46b271;
   padding: 7px;
@@ -1281,7 +1350,23 @@ footer {
               width: 100%;
               margin-bottom: 10px; }
             .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-3 {
-              margin-right: 10px; } }
+              margin-right: 10px; }
+
+  .tc-iconos {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    background-color: #46b271;
+    margin: 0px auto;
+    height: auto;
+    width: 100%; }
+    .tc-iconos .tci {
+      width: 33%;
+      padding: 24px;
+      text-align: center;
+      font-family: "Oswald", sans-serif; }
+      .tc-iconos .tci:hover {
+        background-color: #46b271; } }
 @media screen and (max-width: 768px) {
   .m-header .ls {
     margin: 0px auto;

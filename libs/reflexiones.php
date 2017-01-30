@@ -38,12 +38,18 @@ $the_query = new WP_Query(create_page($month_actually,$perpage_actually));
 			<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
     		<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
 			<div class="label">
-				<i class="icon-file3 fa fa-file"></i>
-				<a href="<?php bloginfo('url'); ?>/reflexiones/" class="cat">Reflexiones</a>
-				<i class="icon-file2 fa fa-link"></i>				
-				<a href="<?php bloginfo('url'); ?>/reflexiones/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
-				<i class="icon-file4 fa fa-clock-o"></i>
-				<span class="dia"><?php echo dia($day = $day + 1); ?></span>
+				<div class="ic-1">
+					<i class="icon-file3 fa fa-file"></i>
+					<a href="<?php bloginfo('url'); ?>/reflexiones/" class="cat">Reflexiones</a>					
+				</div>
+				<div class="ic-2">
+					<i class="icon-file2 fa fa-link"></i>				
+					<a href="<?php bloginfo('url'); ?>/reflexiones/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>					
+				</div>
+				<div class="ic-3">
+					<i class="icon-file4 fa fa-clock-o"></i>
+					<span class="dia"><?php echo dia($day = $day + 1); ?></span>
+				</div>					
 			</div>
 			<div class="exe"><?php excerpt('22'); ?>...[<a href="<?php the_permalink(); ?>"> .....</a>]</div>
 </div>

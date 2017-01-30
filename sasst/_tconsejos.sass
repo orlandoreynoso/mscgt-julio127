@@ -1,0 +1,35 @@
+.tc-iconos
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	box-sizing: border-box
+	background-color: $verdeoscuro
+	margin: 0px auto
+	height:auto
+	.tci
+		width: 20%
+		padding: 60px 24px
+		text-align: center
+		font-family: 'Oswald', sans-serif
+		&:hover
+			background-color: $verde
+	.tci-agenda,
+	.tci-historia,
+	.tci-video,
+	.tci-foto,
+	.tci-evento			
+		display: block				
+		text-decoration: none
+		color: $grisoscuro
+		font-size: 20px
+		font-family: 'Oswald', sans-serif
+		text-transform: uppercase
+		&:hover
+			color: $rosa
+			transition: 0.5s ease
+			background-color: $verde
+		span
+			display: block
+		span:nth-child(1)
+			margin-bottom: 3px
+		span:nth-child(2)

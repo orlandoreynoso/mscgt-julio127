@@ -4,6 +4,18 @@ Template Name: Categoria Tres Consejos
 */
 ?>
 <?php get_header(); ?>
+
+<div class="slide">
+    <div class="row">
+      <div class="col-md-12">
+			<div>
+				<?php // if ( function_exists( 'easingslider' ) ) { easingslider( 1426 ); } ?>
+				<?php  echo do_shortcode("[metaslider id=2725]");  ?>	
+			</div>
+      </div>
+    </div>
+</div>
+
 <section>
 	<article class="banner">
 		<?php  echo do_shortcode("[metaslider id=2666]");  ?>

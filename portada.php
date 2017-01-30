@@ -55,8 +55,10 @@ Template Post Type: post, page, product
 					<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
 		    		<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
 					<div class="label">
-						<i class="icon-file2 fa fa-link"></i>				
-						<a href="<?php bloginfo('url'); ?>/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
+						<div class="ic-2">
+							<i class="icon-file2 fa fa-link"></i>				
+							<a href="<?php bloginfo('url'); ?>/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
+						</div>
 					</div>
 					<div class="exe"><?php the_excerpt(); ?></div>
 					<?php endwhile;?>
@@ -73,8 +75,10 @@ Template Post Type: post, page, product
 					<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
 		    		<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
 					<div class="label">
-						<i class="icon-file2 fa fa-link"></i>				
-						<a href="<?php bloginfo('url'); ?>/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
+						<div class="ic-2">
+							<i class="icon-file2 fa fa-link"></i>				
+							<a href="<?php bloginfo('url'); ?>/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>
+						</div>
 					</div>
 					<div class="exe"><?php the_excerpt(); ?></div>
 					<?php endwhile;?>				

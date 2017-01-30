@@ -35,8 +35,12 @@ include get_template_directory().'/libs/headermeta.php';
 		//1305 es el ID para tres consejos
 	}
 
+	if(is_page('tres-consejos')) {
+		include (TEMPLATEPATH . '/libs/header_tconsejos.php');
+	}
+
 	else{
-		include (TEMPLATEPATH . '/libs/header_general.php'); 
+		include (TEMPLATEPATH . '/libs/header_general.php');
 	}
 ?>
 

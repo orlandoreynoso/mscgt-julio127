@@ -389,42 +389,41 @@ input[type=number]::-webkit-outer-spin-button {
           margin: 10px auto; }
           .espiritualidad .cuadro-reflexiones .reflexiones .actual .title:hover {
             color: #009FFF; }
-        .espiritualidad .cuadro-reflexiones .reflexiones .actual .label {
+        .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc {
           width: 100%;
           padding: 15px 0px;
           display: block;
-          box-sizing: border-box;
-          display: flex;
-          flex-flow: row wrap; }
-          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-1 {
-            width: 33%;
+          background-color: orange; }
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-1 {
+            background: red;
+            width: 33.3333%;
             box-sizing: border-box; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-1 .icon-file3 {
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-1 .icon-file3 {
               margin-right: 10px;
               color: #009FFF; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-1 .icon-file {
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-1 .icon-file {
               margin-right: 10px;
               color: #46b271; }
-          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-2 {
-            width: 33%;
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-2 {
+            width: 33.3333%;
             box-sizing: border-box; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-2 .icon-file2 {
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-2 .icon-file2 {
               margin-right: 10px;
               margin-left: 10px;
               color: #46b271; }
-          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-3 {
-            width: 33%;
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-3 {
+            width: 33.3333%;
             box-sizing: border-box; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-3 .icon-file4 {
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .ic-3 .icon-file4 {
               margin-right: 10px;
               margin-left: 10px;
               color: #d53132; }
-          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .dia {
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc .dia {
             margin-right: 10px;
             color: #46b271; }
-          .espiritualidad .cuadro-reflexiones .reflexiones .actual .label a {
+          .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc a {
             color: #333333; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label a:hover {
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .labelc a:hover {
               color: #46b271; }
       .espiritualidad .cuadro-reflexiones .reflexiones .list {
         width: 25%;
@@ -491,42 +490,41 @@ input[type=number]::-webkit-outer-spin-button {
           margin: 10px auto; }
           .last .cuadro-last .contenido .actual .title:hover {
             color: #46b271; }
-        .last .cuadro-last .contenido .actual .label {
+        .last .cuadro-last .contenido .actual .labelc {
           width: 100%;
           padding: 15px 0px;
           display: block;
-          box-sizing: border-box;
-          display: flex;
-          flex-flow: row wrap; }
-          .last .cuadro-last .contenido .actual .label .ic-1 {
-            width: 33%;
+          background-color: orange; }
+          .last .cuadro-last .contenido .actual .labelc .ic-1 {
+            background: red;
+            width: 33.3333%;
             box-sizing: border-box; }
-            .last .cuadro-last .contenido .actual .label .ic-1 .icon-file3 {
+            .last .cuadro-last .contenido .actual .labelc .ic-1 .icon-file3 {
               margin-right: 10px;
               color: #46b271; }
-            .last .cuadro-last .contenido .actual .label .ic-1 .icon-file {
+            .last .cuadro-last .contenido .actual .labelc .ic-1 .icon-file {
               margin-right: 10px;
               color: #009FFF; }
-          .last .cuadro-last .contenido .actual .label .ic-2 {
-            width: 33%;
+          .last .cuadro-last .contenido .actual .labelc .ic-2 {
+            width: 33.3333%;
             box-sizing: border-box; }
-            .last .cuadro-last .contenido .actual .label .ic-2 .icon-file2 {
+            .last .cuadro-last .contenido .actual .labelc .ic-2 .icon-file2 {
               margin-right: 10px;
               margin-left: 10px;
               color: #009FFF; }
-          .last .cuadro-last .contenido .actual .label .ic-3 {
-            width: 33%;
+          .last .cuadro-last .contenido .actual .labelc .ic-3 {
+            width: 33.3333%;
             box-sizing: border-box; }
-            .last .cuadro-last .contenido .actual .label .ic-3 .icon-file4 {
+            .last .cuadro-last .contenido .actual .labelc .ic-3 .icon-file4 {
               margin-right: 10px;
               margin-left: 10px;
               color: #d53132; }
-          .last .cuadro-last .contenido .actual .label .dia {
+          .last .cuadro-last .contenido .actual .labelc .dia {
             margin-right: 10px;
             color: #009FFF; }
-          .last .cuadro-last .contenido .actual .label a {
+          .last .cuadro-last .contenido .actual .labelc a {
             color: #333333; }
-            .last .cuadro-last .contenido .actual .label a:hover {
+            .last .cuadro-last .contenido .actual .labelc a:hover {
               color: #009FFF; }
         .last .cuadro-last .contenido .actual .thumb {
           width: 100%;
@@ -629,42 +627,41 @@ input[type=number]::-webkit-outer-spin-button {
           margin: 10px auto; }
           .crecimiento .cuadro-crecimiento .contenido .actual .title:hover {
             color: #46b271; }
-        .crecimiento .cuadro-crecimiento .contenido .actual .label {
+        .crecimiento .cuadro-crecimiento .contenido .actual .labelc {
           width: 100%;
           padding: 15px 0px;
           display: block;
-          box-sizing: border-box;
-          display: flex;
-          flex-flow: row wrap; }
-          .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-1 {
-            width: 33%;
+          background-color: orange; }
+          .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-1 {
+            background: red;
+            width: 33.3333%;
             box-sizing: border-box; }
-            .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-1 .icon-file3 {
+            .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-1 .icon-file3 {
               margin-right: 10px;
               color: #46b271; }
-            .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-1 .icon-file {
+            .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-1 .icon-file {
               margin-right: 10px;
               color: #009FFF; }
-          .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-2 {
-            width: 33%;
+          .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-2 {
+            width: 33.3333%;
             box-sizing: border-box; }
-            .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-2 .icon-file2 {
+            .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-2 .icon-file2 {
               margin-right: 10px;
               margin-left: 10px;
               color: #009FFF; }
-          .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-3 {
-            width: 33%;
+          .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-3 {
+            width: 33.3333%;
             box-sizing: border-box; }
-            .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-3 .icon-file4 {
+            .crecimiento .cuadro-crecimiento .contenido .actual .labelc .ic-3 .icon-file4 {
               margin-right: 10px;
               margin-left: 10px;
               color: #d53132; }
-          .crecimiento .cuadro-crecimiento .contenido .actual .label .dia {
+          .crecimiento .cuadro-crecimiento .contenido .actual .labelc .dia {
             margin-right: 10px;
             color: #009FFF; }
-          .crecimiento .cuadro-crecimiento .contenido .actual .label a {
+          .crecimiento .cuadro-crecimiento .contenido .actual .labelc a {
             color: #333333; }
-            .crecimiento .cuadro-crecimiento .contenido .actual .label a:hover {
+            .crecimiento .cuadro-crecimiento .contenido .actual .labelc a:hover {
               color: #009FFF; }
       .crecimiento .cuadro-crecimiento .contenido .list {
         width: 25%;
@@ -1082,52 +1079,6 @@ footer {
         .e-contenedor .docs .list .title:hover {
           color: #46b271; }
 
-.tc-iconos {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
-  background-color: #35985c;
-  margin: 0px auto; }
-  .tc-iconos .tci {
-    width: 20%;
-    padding: 60px 24px;
-    text-align: center;
-    font-family: "Oswald", sans-serif; }
-    .tc-iconos .tci:hover {
-      background-color: #46b271; }
-  .tc-iconos .tci-agenda,
-  .tc-iconos .tci-historia,
-  .tc-iconos .tci-video,
-  .tc-iconos .tci-foto,
-  .tc-iconos .tci-evento {
-    display: block;
-    text-decoration: none;
-    color: #333333;
-    font-size: 20px;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase; }
-    .tc-iconos .tci-agenda:hover,
-    .tc-iconos .tci-historia:hover,
-    .tc-iconos .tci-video:hover,
-    .tc-iconos .tci-foto:hover,
-    .tc-iconos .tci-evento:hover {
-      color: #d53132;
-      transition: 0.5s ease;
-      background-color: #46b271; }
-    .tc-iconos .tci-agenda span,
-    .tc-iconos .tci-historia span,
-    .tc-iconos .tci-video span,
-    .tc-iconos .tci-foto span,
-    .tc-iconos .tci-evento span {
-      display: block; }
-    .tc-iconos .tci-agenda span:nth-child(1),
-    .tc-iconos .tci-historia span:nth-child(1),
-    .tc-iconos .tci-video span:nth-child(1),
-    .tc-iconos .tci-foto span:nth-child(1),
-    .tc-iconos .tci-evento span:nth-child(1) {
-      margin-bottom: 3px; }
-
 .navigation {
   background-color: #46b271;
   padding: 7px;
@@ -1276,12 +1227,16 @@ footer {
               width: 100%;
               display: block; }
           .espiritualidad .cuadro-reflexiones .reflexiones .actual .label {
-            justify-content: space-between; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-1 {
-              width: 100%;
-              margin-bottom: 10px; }
-            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-3 {
-              margin-right: 10px; } }
+            overflow: hidden; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file2 {
+              margin-right: 2px;
+              margin-left: 2px;
+              color: #46b271; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file3 {
+              margin-right: 2px;
+              color: #009FFF; }
+            .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .icon-file4 {
+              clear: both; } }
 @media screen and (max-width: 768px) {
   .m-header .ls {
     margin: 0px auto;

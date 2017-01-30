@@ -21,7 +21,11 @@ $the_query = new WP_Query(create_page($page_actually,$perpage_actually));
 
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
-            <div class="label"><i class="icon-file fa fa-file"></i><a href="<?php bloginfo('url'); ?>/homilias/" class="cat"><?php echo $title;  ?></a></div>
+    <div class="label">
+        <div class="ic-1">
+            <i class="icon-file fa fa-file"></i><a href="<?php bloginfo('url'); ?>/homilias/" class="cat"><?php echo $title;  ?></a>
+        </div>        
+    </div>
     <div class="exe"><?php excerpt('22'); ?>...[<a href="<?php the_permalink(); ?>"> .....</a>]</div>
 </div>
 <?php endwhile;?>

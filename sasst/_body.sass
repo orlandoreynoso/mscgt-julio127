@@ -57,21 +57,32 @@
 		width: 100%
 		padding: 15px 0px
 		display: block
-		text-align: left
-		.icon-file
-			margin-right: 10px
-			color: $color1
-		.icon-file2
-			margin-right: 10px
-			margin-left: 10px
-			color: $color1
-		.icon-file3
-			margin-right: 10px
-			color: $color2
-		.icon-file4
-			margin-right: 10px
-			margin-left: 10px
-			color: $color3		
+		box-sizing: border-box
+		display: flex
+		flex-flow: row wrap
+		.ic-1
+			width: 33%
+			box-sizing: border-box
+			.icon-file3
+				margin-right: 10px
+				color: $color2
+			.icon-file
+				margin-right: 10px
+				color: $color1
+		.ic-2
+			width: 33%
+			box-sizing: border-box		
+			.icon-file2
+				margin-right: 10px
+				margin-left: 10px
+				color: $color1
+		.ic-3
+			width: 33%
+			box-sizing: border-box		
+			.icon-file4
+				margin-right: 10px
+				margin-left: 10px
+				color: $color3		
 		.dia
 			margin-right: 10px
 			color: $color1			

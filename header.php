@@ -45,9 +45,6 @@ include get_template_directory().'/libs/headermeta.php';
 ?>
 
 <div class="e-menu">
-	<div class="container">
-		<div class="row">
-				<div class="col-md-12">
 					<nav class="navbar navbar-default" role="navigation">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
@@ -76,7 +73,4 @@ include get_template_directory().'/libs/headermeta.php';
 					        ?>
 					    </div>
 					</nav>
-			</div>
-		</div>
-	</div>
 </div>

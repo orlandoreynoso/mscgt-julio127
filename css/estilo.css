@@ -51,7 +51,7 @@ header {
       font-family: "Oswald", sans-serif;
       margin-bottom: 5px; }
       .m-header .sm .ubicacion .icon {
-        color: #d53132;
+        color: #ba1d1d;
         margin-right: 5px; }
     .m-header .sm .search {
       width: 100%;
@@ -153,108 +153,24 @@ header {
         background-color: #ffffff; }
 
 .e-menu {
-  background-color: #d53132;
-  width: 100%;
-  padding: 5px; }
-  .e-menu .row {
-    padding: 0px;
-    margin: 0px; }
-
-.navbar-header {
-  display: none; }
-
-.navbar-default {
-  background-color: #d53132; }
-  .navbar-default .navbar-toggle .icon-bar {
-    color: #ffffff;
-    background-color: #ffffff; }
-  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #ffffff;
-    color: #d53132; }
-    .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
-      color: #d53132;
-      background-color: #d53132; }
-  .navbar-default .navbar-brand {
-    color: #ffffff; }
-  .navbar-default .navbar-nav > li > a {
-    background-color: #d53132;
-    color: #ffffff; }
-    .navbar-default .navbar-nav > li > a li a:focus {
-      color: #ffffff;
-      background-color: #d53132; }
-    .navbar-default .navbar-nav > li > a:hover {
-      background-color: #ffffff;
-      color: #d53132; }
-    .navbar-default .navbar-nav > li > a:focus {
-      color: #ffffff;
-      background-color: transparent; }
-  .navbar-default .navbar-nav > .active > a:focus,
-  .navbar-default .navbar-nav > .active > a:hover {
-    color: #d53132;
-    background-color: #ffffff; }
-  .navbar-default .navbar-nav > .open > a:focus,
-  .navbar-default .navbar-nav > .open > a:hover {
-    background-color: #ffffff;
-    color: #d53132; }
-
-.navbar {
   border: none;
-  padding: 0px;
-  margin: 0px; }
+  background-color: #ba1d1d; }
+  .e-menu .navbar {
+    background-color: transparent;
+    border: none;
+    display: flex; }
+    .e-menu .navbar .container-fluid {
+      background-color: transparent;
+      justify-content: center;
+      max-width: 1024px; }
+      @media screen and (min-width: 875px) {
+        .e-menu .navbar .container-fluid .navbar-header {
+          display: none; } }
+      .e-menu .navbar .container-fluid .navbar-collapse {
+        padding: 20px 10px; }
+        .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav {
+          background-color: green; }
 
-nav {
-  padding: 20px;
-  width: 100%; }
-  nav #cuadro_menu {
-    background-color: #d53132; }
-    nav #cuadro_menu .menu {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
-      margin: 0px;
-      padding: 0px;
-      background-color: #d53132; }
-      nav #cuadro_menu .menu li {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        transition: 0.5s ease;
-        -o-transition: 0.5s ease;
-        -webkit-transition: 0.5s ease; }
-        nav #cuadro_menu .menu li a {
-          color: #ffffff;
-          text-decoration: none;
-          padding: 18px 10px 18px 10px;
-          display: block; }
-          nav #cuadro_menu .menu li a:hover {
-            color: #333333;
-            transition: 0.5s ease;
-            -o-transition: 0.5s ease;
-            -webkit-transition: 0.5s ease;
-            background-color: #ffffff; }
-        nav #cuadro_menu .menu li ul {
-          display: none;
-          background-color: #46b271;
-          position: absolute;
-          z-index: 900; }
-        nav #cuadro_menu .menu li:hover ul {
-          display: block; }
-
-/*-- */
 input[type="text"],
 input[type="tel"],
 input[type="number"],
@@ -265,7 +181,7 @@ input[type="email"] {
   font-size: 0.9em;
   background: #ffffff;
   border-radius: 5px;
-  border: 1px solid #d53132;
+  border: 1px solid #ba1d1d;
   font-weight: 300; }
   input[type="text"]:focus,
   input[type="tel"]:focus,
@@ -277,11 +193,11 @@ input[type="email"] {
 textarea {
   box-sizing: border-box;
   padding: 7px 10px;
-  color: #d53132;
+  color: #ba1d1d;
   font-size: 0.9em;
   background: #ffffff;
   border-radius: 5px;
-  border: 1px solid #d53132;
+  border: 1px solid #ba1d1d;
   font-weight: 300; }
 
 input[type="submit"],
@@ -290,7 +206,7 @@ button[type="submit"] {
   box-sizing: border-box;
   box-sizing: border-box;
   padding: 7px 10px;
-  color: #d53132;
+  color: #ba1d1d;
   font-size: 0.9em;
   background: none;
   border-radius: 5px;
@@ -304,7 +220,7 @@ button[type="submit"] {
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  color: #b20013;
+  color: #ba1d1d;
   font-weight: 600; }
 
 .slide {
@@ -357,9 +273,12 @@ input[type=number]::-webkit-outer-spin-button {
         box-sizing: border-box;
         background-color: #ffffff;
         padding: 20px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e9e9e9; }
         .espiritualidad .cuadro-reflexiones .reflexiones .actual .exe {
-          margin-top: 10px; }
+          margin-top: 5px;
+          min-height: 110px;
+          font-size: 1em; }
         .espiritualidad .cuadro-reflexiones .reflexiones .actual .thumb {
           width: 100%;
           height: auto;
@@ -381,12 +300,13 @@ input[type=number]::-webkit-outer-spin-button {
               box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
         .espiritualidad .cuadro-reflexiones .reflexiones .actual .title {
           font-family: "Oswald", sans-serif;
-          font-size: 1.55em;
+          font-size: 1.29em;
           color: #46b271;
           width: 100%;
           text-align: center;
           display: block;
-          margin: 10px auto; }
+          margin: 5px auto 5px auto;
+          min-height: 59px; }
           .espiritualidad .cuadro-reflexiones .reflexiones .actual .title:hover {
             color: #009FFF; }
         .espiritualidad .cuadro-reflexiones .reflexiones .actual .label {
@@ -418,7 +338,7 @@ input[type=number]::-webkit-outer-spin-button {
             .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .ic-3 .icon-file4 {
               margin-right: 10px;
               margin-left: 10px;
-              color: #d53132; }
+              color: #ba1d1d; }
           .espiritualidad .cuadro-reflexiones .reflexiones .actual .label .dia {
             margin-right: 10px;
             color: #46b271; }
@@ -461,7 +381,9 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 0px 0px 10px 0px;
         border-bottom: 1px solid #e9e9e9; }
         .last .cuadro-last .contenido .actual .exe {
-          margin-top: 10px; }
+          margin-top: 5px;
+          min-height: 110px;
+          font-size: 1em; }
         .last .cuadro-last .contenido .actual .thumb {
           width: 100%;
           height: auto;
@@ -483,12 +405,13 @@ input[type=number]::-webkit-outer-spin-button {
               box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
         .last .cuadro-last .contenido .actual .title {
           font-family: "Oswald", sans-serif;
-          font-size: 1.55em;
+          font-size: 1.29em;
           color: #009FFF;
           width: 100%;
           text-align: center;
           display: block;
-          margin: 10px auto; }
+          margin: 5px auto 5px auto;
+          min-height: 59px; }
           .last .cuadro-last .contenido .actual .title:hover {
             color: #46b271; }
         .last .cuadro-last .contenido .actual .label {
@@ -520,7 +443,7 @@ input[type=number]::-webkit-outer-spin-button {
             .last .cuadro-last .contenido .actual .label .ic-3 .icon-file4 {
               margin-right: 10px;
               margin-left: 10px;
-              color: #d53132; }
+              color: #ba1d1d; }
           .last .cuadro-last .contenido .actual .label .dia {
             margin-right: 10px;
             color: #009FFF; }
@@ -580,7 +503,7 @@ input[type=number]::-webkit-outer-spin-button {
     .crecimiento .cuadro-crecimiento .titulo {
       text-align: center;
       width: 100%;
-      background-color: #d53132;
+      background-color: #ba1d1d;
       padding: 24px 0px 17px 25px; }
       .crecimiento .cuadro-crecimiento .titulo h3 {
         font-size: 1.2em;
@@ -599,7 +522,9 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 20px;
         margin-bottom: 10px; }
         .crecimiento .cuadro-crecimiento .contenido .actual .exe {
-          margin-top: 10px; }
+          margin-top: 5px;
+          min-height: 110px;
+          font-size: 1em; }
         .crecimiento .cuadro-crecimiento .contenido .actual .thumb {
           width: 100%;
           height: auto;
@@ -621,12 +546,13 @@ input[type=number]::-webkit-outer-spin-button {
               box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
         .crecimiento .cuadro-crecimiento .contenido .actual .title {
           font-family: "Oswald", sans-serif;
-          font-size: 1.55em;
+          font-size: 1.29em;
           color: #009FFF;
           width: 100%;
           text-align: center;
           display: block;
-          margin: 10px auto; }
+          margin: 5px auto 5px auto;
+          min-height: 59px; }
           .crecimiento .cuadro-crecimiento .contenido .actual .title:hover {
             color: #46b271; }
         .crecimiento .cuadro-crecimiento .contenido .actual .label {
@@ -658,7 +584,7 @@ input[type=number]::-webkit-outer-spin-button {
             .crecimiento .cuadro-crecimiento .contenido .actual .label .ic-3 .icon-file4 {
               margin-right: 10px;
               margin-left: 10px;
-              color: #d53132; }
+              color: #ba1d1d; }
           .crecimiento .cuadro-crecimiento .contenido .actual .label .dia {
             margin-right: 10px;
             color: #009FFF; }
@@ -725,7 +651,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .recomen .titulo-recomendaciones {
   text-align: center;
-  background-color: #d53132;
+  background-color: #ba1d1d;
   padding: 24px 0px 17px 25px; }
   .recomen .titulo-recomendaciones h3 {
     font-size: 1.2em;
@@ -870,7 +796,7 @@ input[type=number]::-webkit-outer-spin-button {
         .con-general .con .contenido .date-cat .fecha {
           font-family: "Oswald", sans-serif;
           font-size: 0.9em;
-          color: #d53132; }
+          color: #ba1d1d; }
           .con-general .con .contenido .date-cat .fecha .icon-date {
             margin-right: 5px;
             color: #46b271; }
@@ -879,10 +805,10 @@ input[type=number]::-webkit-outer-spin-button {
           font-size: 0.9em;
           float: right;
           text-align: right;
-          color: #d53132; }
+          color: #ba1d1d; }
           .con-general .con .contenido .date-cat .descripcion_categoria .icon-file {
             margin-right: 5px;
-            color: #d53132; }
+            color: #ba1d1d; }
           .con-general .con .contenido .date-cat .descripcion_categoria a {
             color: #009FFF; }
             .con-general .con .contenido .date-cat .descripcion_categoria a:hover {
@@ -920,7 +846,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #ffffff;
   margin-bottom: 5px; }
   .con-general .con .titulo .mapeo a {
-    color: #d53132;
+    color: #ba1d1d;
     font-weight: bold;
     padding: 0px 4px 0px 4px; }
     .con-general .con .titulo .mapeo a:hover {
@@ -1082,6 +1008,10 @@ footer {
         .e-contenedor .docs .list .title:hover {
           color: #46b271; }
 
+.msc-cover .contenido {
+  font-size: 1.0625em;
+  line-height: 1.625em; }
+
 .tc-iconos {
   display: flex;
   flex-flow: row wrap;
@@ -1112,7 +1042,7 @@ footer {
     .tc-iconos .tci-video:hover,
     .tc-iconos .tci-foto:hover,
     .tc-iconos .tci-evento:hover {
-      color: #d53132;
+      color: #ba1d1d;
       transition: 0.5s ease;
       background-color: #46b271; }
     .tc-iconos .tci-agenda span,
@@ -1239,7 +1169,7 @@ footer {
         content: ">>"; }
     .navigation .pagenavi .current {
       padding: 4px;
-      background-color: #d53132;
+      background-color: #ba1d1d;
       color: #ffffff;
       margin: 4px; }
     .navigation .pagenavi .first {
@@ -1273,15 +1203,15 @@ footer {
 @media screen and (max-width: 420px) {
   .dropdown-menu > li > a:hover {
     background-color: #ffffff;
-    color: #d53132; }
+    color: #ba1d1d; }
 
   .dropdown-menu {
     background-color: #ffffff;
-    color: #d53132; }
+    color: #ba1d1d; }
 
   .navbar-nav .open {
     background-color: #ffffff;
-    color: #d53132; }
+    color: #ba1d1d; }
 
   .m-header .ls {
     margin: 0px auto;
@@ -1386,7 +1316,7 @@ footer {
 
   .navbar-nav .open {
     background-color: #ffffff;
-    color: #d53132; }
+    color: #ba1d1d; }
 
   .groupings .c-agrupaciones {
     width: 100%; }
@@ -1396,7 +1326,10 @@ footer {
   .recomen .c-recomendaciones {
     width: 100%; }
     .recomen .c-recomendaciones .list {
-      width: 50%; } }
+      width: 50%; }
+
+  .navbar-header {
+    display: block; } }
 @media screen and (max-width: 800px) {
   .groupings .c-agrupaciones {
     width: 100%; }

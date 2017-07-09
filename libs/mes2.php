@@ -1,8 +1,8 @@
 <?php 
 
-$month_actually = 4300;
-$perpage_actually = 3;
-$day = 2;
+$month_actually = 4795;
+$perpage_actually = 2;
+$day = 3;
 
 /*
 dia 0: para el dia lunes
@@ -11,6 +11,13 @@ dia 2: para el dia miercoles
 dia 3: para el dia jueves
 dia 4: para el dia viernes
 */
+//2639: Febrero 2016
+//4170: Enero 2017
+//4300: Febrero 2017
+//4428: Marzo 2017
+//4570: Abril 2017
+//4684: Mayo 2017
+//4795: Junio 2017
 
 $the_query = new WP_Query(create_page($month_actually,$perpage_actually));
 	
@@ -21,6 +28,15 @@ $the_query = new WP_Query(create_page($month_actually,$perpage_actually));
     <?php 
     $id = get_permalink($month_actually);
     $title = get_the_title($month_actually);
+
+
+	$str = strtolower($title);
+
+	$tit = explode(' ',$str);
+
+	$titlef = implode("-", $tit);
+
+
 ?>
 
 			<a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
@@ -32,7 +48,7 @@ $the_query = new WP_Query(create_page($month_actually,$perpage_actually));
 				</div>
 				<div class="ic-2">
 					<i class="icon-file2 fa fa-link"></i>				
-					<a href="<?php bloginfo('url'); ?>/reflexiones/<?php echo $title; ?>" class="cat"><?php echo $title;  ?></a>					
+					<a href="<?php bloginfo('url'); ?>/reflexiones/<?php echo $titlef; ?>" class="cat"><?php echo $title;  ?></a>					
 				</div>
 				<div class="ic-3">
 					<i class="icon-file4 fa fa-clock-o"></i>

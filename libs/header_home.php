@@ -1,4 +1,4 @@
-<section>
+<section class="msc-cover">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

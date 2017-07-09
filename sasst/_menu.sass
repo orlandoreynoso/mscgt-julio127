@@ -1,7 +1,6 @@
 .e-menu
 	background-color: $rosa
 	width: 100%
-	padding: 5px
 	.row
 		padding: 0px
 		margin: 0px
@@ -22,9 +21,24 @@
 				background-color: $rosa
 	.navbar-brand
 		color: $blanco
+	.navbar-nav > li 
+		position: relative
+		margin: 0px auto
 	.navbar-nav > li > a
 		background-color: $rosa
 		color: $blanco
+		padding: 20px 9px
+		&::before
+			content: ""
+			background-color: $mc-azul
+			height: 3px
+			position: absolute
+			top: -12px
+			width: 90%
+			right: 10%
+			left: 10%
+			display: block
+			margin: 0px auto
 		li
 			a
 				&:focus
@@ -83,8 +97,7 @@ nav
 				-webkit-transition: 0.5s ease
 				a
 					color: #ffffff
-					text-decoration: none
-					padding: 18px 10px 18px 10px
+					text-decoration: none //	padding: 18px 10px 18px 10px
 					display: block
 					&:hover
 						color: #333333

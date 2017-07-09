@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Portada
+Template Name: Cover-mscgt
 Template Post Type: post, page, product
  */
 ?>
@@ -95,7 +95,7 @@ Template Post Type: post, page, product
 		<div class="row cuadro-last">
 			<div class="titulo"><h3>últimas noticias</h3></div>
 			<div class="contenido">
-				<?php get_sidebar('3'); ?>		
+				<?php // get_sidebar('3'); ?>		
 			</div>
 		</div>
 	</div>

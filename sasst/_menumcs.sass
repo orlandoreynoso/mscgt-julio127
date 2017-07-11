@@ -1,18 +1,70 @@
+/*=====menu Julio 2017============*/
+
 .e-menu
 	border: none
-	background-color: $rojo
 	.navbar	
-		background-color: transparent
 		border: none
 		display: flex
+		background-color: transparent
 		.container-fluid
 			background-color: transparent
 			justify-content: center
 			max-width: 1024px
-			@media screen and (min-width: 875px)
+			@media screen and (min-width: 767px)
 				.navbar-header
 					display: none
 			.navbar-collapse
-				padding: 20px 10px
-				.navbar-nav
-					background-color: green
+				background-color: transparent
+				.navbar-nav 
+					background-color: transparent
+					display: flex
+					flex-flow: row wrap
+					font-family: $opensans
+					text-transform:  uppercase
+					font-size: 1em
+					outline: none
+					border: none	
+					.current-menu-item
+						position: relative
+						&::after
+							content: ""
+							height: 3px
+							background-color: $mc-amarillo
+							position: absolute
+							font-weight: 300
+							bottom: 0px
+							display: block
+							width: 100%								
+					&>li
+						position: relative
+						&:hover
+							&::after
+								content: ""
+								height: 3px
+								background-color: $mc-amarillo
+								position: absolute
+								bottom: 0px
+								display: block
+								width: 100%
+					&>li>a
+						color: $mc-blanco
+						padding: 20px 9px 18px
+					li
+						list-style: none
+						outline: none
+						border: none
+					&>.active
+						&>a
+							background-color: transparent							
+/*==============  Para anlizar ============================================
+					&>.active
+						background-color: yellow
+						color: red
+						&>a
+							background-color: magenta
+							color: $mc-blanco
+						a
+							display: block
+							&:hover
+								color: $mc-azul	
+/*==============================================*/

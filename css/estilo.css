@@ -1,3 +1,4 @@
+/*==== fuentes ====== */
 #titulo_cuadro h3 {
   font-size: 1.1em;
   color: #ffffff;
@@ -152,25 +153,74 @@ header {
         -webkit-transition: 0.5s ease;
         background-color: #ffffff; }
 
+/*=====menu Julio 2017============ */
 .e-menu {
-  border: none;
-  background-color: #ba1d1d; }
+  border: none; }
   .e-menu .navbar {
-    background-color: transparent;
     border: none;
-    display: flex; }
+    display: flex;
+    background-color: transparent; }
     .e-menu .navbar .container-fluid {
       background-color: transparent;
       justify-content: center;
       max-width: 1024px; }
-      @media screen and (min-width: 875px) {
+      @media screen and (min-width: 767px) {
         .e-menu .navbar .container-fluid .navbar-header {
           display: none; } }
       .e-menu .navbar .container-fluid .navbar-collapse {
-        padding: 20px 10px; }
+        background-color: transparent; }
         .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav {
-          background-color: green; }
+          background-color: transparent;
+          display: flex;
+          flex-flow: row wrap;
+          font-family: "Open Sans", sans-serif;
+          text-transform: uppercase;
+          font-size: 1em;
+          outline: none;
+          border: none; }
+          .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav .current-menu-item {
+            position: relative; }
+            .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav .current-menu-item::after {
+              content: "";
+              height: 3px;
+              background-color: #f7b32b;
+              position: absolute;
+              font-weight: 300;
+              bottom: 0px;
+              display: block;
+              width: 100%; }
+          .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav > li {
+            position: relative; }
+            .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav > li:hover::after {
+              content: "";
+              height: 3px;
+              background-color: #f7b32b;
+              position: absolute;
+              bottom: 0px;
+              display: block;
+              width: 100%; }
+          .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav > li > a {
+            color: #ffffff;
+            padding: 20px 9px 18px; }
+          .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav li {
+            list-style: none;
+            outline: none;
+            border: none; }
+          .e-menu .navbar .container-fluid .navbar-collapse .navbar-nav > .active > a {
+            background-color: transparent; }
 
+/*==============  Para anlizar ============================================
+ * &>.active
+ * 	background-color: yellow
+ * 	color: red
+ * 	&>a
+ * 		background-color: magenta
+ * 		color: $mc-blanco
+ * 	a
+ * 		display: block
+ * 		&:hover
+ * 			color: $mc-azul	 */
+/*============================================== */
 input[type="text"],
 input[type="tel"],
 input[type="number"],
@@ -1008,9 +1058,39 @@ footer {
         .e-contenedor .docs .list .title:hover {
           color: #46b271; }
 
-.msc-cover .contenido {
-  font-size: 1.0625em;
-  line-height: 1.625em; }
+/*======  Header cover ================= */
+.msc-cover {
+  background-image: url("../images/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10px;
+  padding-bottom: 15px; }
+  .msc-cover .cover-title {
+    width: 100%;
+    margin: 40px auto 30px auto;
+    padding: 0px;
+    box-sizing: border-box; }
+    .msc-cover .cover-title h1 {
+      width: 100%;
+      color: #ffffff;
+      font-size: 60px;
+      display: block;
+      text-align: center;
+      padding: 0px; }
+    .msc-cover .cover-title h2 {
+      width: 100%;
+      color: #f7b32b;
+      font-size: 30px;
+      display: block;
+      text-align: center;
+      padding: 0px; }
+  .msc-cover .contenido {
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    font-size: 1.0625em;
+    line-height: 1.625em;
+    text-align: center; }
 
 .tc-iconos {
   display: flex;

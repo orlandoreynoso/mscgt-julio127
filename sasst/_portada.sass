@@ -33,24 +33,24 @@
 		h1
 			width: 100%
 			color: $mc-blanco
-			font-size: 60px
+			font-size: 2.5em
 			display: block
 			text-align: center
-			padding: 0px	
+			padding: 0px
 		h2
 			width: 100%
 			color: $mc-amarillo
-			font-size: 30px
+			font-size: 1.875em
 			display: block
 			text-align: center
-			padding: 0px			
+			padding: 0px
 	.contenido
 		font-family: $opensans
 		color: $mc-blanco
 		font-size: 1.0625em
 		line-height: 1.625em
 		text-align: center
-
+/* ================ Iglesias =================== */
 /*============== try =============================*/
 .msc-espiritualidad
 	background-color: red
@@ -76,28 +76,33 @@
 	width: 100%
 	flex-wrap: wrap
 	align-content: center
+	background-image: url('../images/texture.png')
+	background-repeat: repeat
 	.tit-portada-iglesias-msc
-		display: flex
 		width: 100%
-		justify-content: center
-		flex-wrap: wrap
-		align-items: center
-		align-content: center
+		padding-top: 20px
+		padding-bottom: 30px
+		.iglesias-titulo
+			color: $mc-botella
+			font-size: 2.5em
+			text-transform: uppercase
+		.church-descriptions
+			color: $mc-azul
+			font-size: 1.25em
+	.mc-iglesias
+		background-image: url('../images/texture.png')
+		background-repeat: repeat
 	.iglesias
 		width: 100%
 		display: flex
 		flex-direction: row
-		justify-content: space-around
-		flex-wrap: wrap
-		align-items: baseline
-		align-content: space-around
 		background-color: red
+		padding: 20px
+		justify-content: space-between
 		.mc-churchs
-			width: 50%
+			width: 25%
+			padding: 10px
 			background-color: green
-			height: 150px
-			img
-				width: 100%
 	.msc-portada
 		width: 100%
 		display: flex
@@ -123,21 +128,21 @@
 					font-size: 60px
 					display: block
 					text-align: center
-					padding: 0px	
+					padding: 0px
 				h2
 					width: 100%
 					color: $mc-amarillo
 					font-size: 30px
 					display: block
 					text-align: center
-					padding: 0px			
+					padding: 0px
 			.contenido
 				font-family: $opensans
 				color: $mc-blanco
 				font-size: 1.0625em
 				line-height: 1.625em
-				text-align: center		
-			.ingresar				
+				text-align: center
+			.ingresar
 				background-color: $mc-amarillo
 				margin: 20px auto 0px auto
 				padding: 1.0em 1.5em
@@ -151,7 +156,3 @@
 					background-color: $mc-azul
 					color: $mc-amarillo
 					transition: 0.5s ease
-
-
-
-

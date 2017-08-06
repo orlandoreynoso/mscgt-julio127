@@ -12,6 +12,6 @@ $(document).ready(function() {
 
 	var nombre = "orlando reynoso";
   //  console.log("Cargado completamente ");
-  alert(nombre);
+  // alert(nombre);
 
 });

@@ -9,24 +9,49 @@ Template Post Type: post, page, product
 
 <section class="portada-iglesias">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="iglesias">
-					<div class="mc-churchs div-block-2">
-						<img class="image-5" src="<?php echo IMAGES.'/tresconsejos.png'; ?>" alt="">
-					</div>
-					<div class="mc-churchs div-block-3">
-						<img class="image-6" src="<?php echo IMAGES.'/santuario.png'; ?>" alt="">
-					</div>
-					<div class="mc-churchs div-block-4">
-						<img class="image-7" src="<?php echo IMAGES.'/tesoro.png'; ?>" alt="">
-					</div>
-					<div class="mc-churchs div-block-5">
-						<img class="image-8" src="<?php echo IMAGES.'/santarita.png'; ?>" alt="">
-					</div>
+		<div class="row text-center">
+			<div class="tit-portada-iglesias-msc">
+				<div class="iglesias-titulo">
+					<h3>Seleciona tu iglesia</h3>
+				</div>
+				<div class="church-descriptions">
+					<p>Estamos conformados por tres Iglesias y un consejo parroquial, ingresa a la página de tu interés.</p>
 				</div>
 			</div>
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+		</div>
+	</div><!--  fin de 1er container -->
+</section>
+
+<section class="mc-iglesias">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="iglesias">
+				<div class="mc-churchs div-block-2">
+					<img class="image-5" src="<?php echo IMAGES.'/tresconsejos.png'; ?>" alt="">
+				</div>
+				<div class="mc-churchs div-block-3">
+					<img class="image-6" src="<?php echo IMAGES.'/santuario.png'; ?>" alt="">
+				</div>
+				<div class="mc-churchs div-block-4">
+					<img class="image-7" src="<?php echo IMAGES.'/tesoro.png'; ?>" alt="">
+				</div>
+				<div class="mc-churchs div-block-5">
+					<img class="image-8" src="<?php echo IMAGES.'/santarita.png'; ?>" alt="">
+				</div>
+			</div>
+		</div>
+	</div><!--  fin container fluid -->
+</section>
+
+<section>
+
+	<div class="container">
+		<div class="row text-center">
+
+			<div class="conta">
+
+			</div>
+			<div class="">
 				<div class="msc-portada">
 					<div class="foto-portada">
 						<div class="cover-title">
@@ -40,15 +65,8 @@ Template Post Type: post, page, product
 			</div>
 		</div>
 	</div>
-	<div class="tit-portada-iglesias-msc">
-		<div class="msc-somos">
-			<h1 class="heading-5"> Quienes somos </h1>
-		</div>
-		<div class="msc-iglesias">
-			<h1 class="heading-4"> Selecciona tu Iglesia </h1>
-		</div>
-	</div>
 </section>
+
 <section>
 
 	<?php

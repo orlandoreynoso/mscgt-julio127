@@ -1078,14 +1078,14 @@ footer {
     .msc-cover .cover-title h1 {
       width: 100%;
       color: #ffffff;
-      font-size: 60px;
+      font-size: 2.5em;
       display: block;
       text-align: center;
       padding: 0px; }
     .msc-cover .cover-title h2 {
       width: 100%;
       color: #f7b32b;
-      font-size: 30px;
+      font-size: 1.875em;
       display: block;
       text-align: center;
       padding: 0px; }
@@ -1096,6 +1096,7 @@ footer {
     line-height: 1.625em;
     text-align: center; }
 
+/* ================ Iglesias =================== */
 /*============== try ============================= */
 .msc-espiritualidad {
   background-color: red;
@@ -1121,29 +1122,34 @@ footer {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  align-content: center; }
+  align-content: center;
+  background-image: url("../images/texture.png");
+  background-repeat: repeat; }
   .portada-iglesias .tit-portada-iglesias-msc {
-    display: flex;
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center; }
+    padding-top: 20px;
+    padding-bottom: 30px; }
+    .portada-iglesias .tit-portada-iglesias-msc .iglesias-titulo {
+      color: #3ea397;
+      font-size: 2.5em;
+      text-transform: uppercase; }
+    .portada-iglesias .tit-portada-iglesias-msc .church-descriptions {
+      color: #293449;
+      font-size: 1.25em; }
+  .portada-iglesias .mc-iglesias {
+    background-image: url("../images/texture.png");
+    background-repeat: repeat; }
   .portada-iglesias .iglesias {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: baseline;
-    align-content: space-around;
-    background-color: red; }
+    background-color: red;
+    padding: 20px;
+    justify-content: space-between; }
     .portada-iglesias .iglesias .mc-churchs {
-      width: 50%;
-      background-color: green;
-      height: 150px; }
-      .portada-iglesias .iglesias .mc-churchs img {
-        width: 100%; }
+      width: 25%;
+      padding: 10px;
+      background-color: green; }
   .portada-iglesias .msc-portada {
     width: 100%;
     display: flex;

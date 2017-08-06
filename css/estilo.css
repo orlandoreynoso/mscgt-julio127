@@ -4,7 +4,11 @@
   color: #ffffff;
   font-family: "oswaldbold"; }
 
-* {
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
   margin: 0px;
   padding: 0px; }
 
@@ -1091,6 +1095,108 @@ footer {
     font-size: 1.0625em;
     line-height: 1.625em;
     text-align: center; }
+
+/*============== try ============================= */
+.msc-espiritualidad {
+  background-color: red;
+  display: flex;
+  box-sizing: border-box; }
+  .msc-espiritualidad .ref {
+    width: calc(100%/3);
+    background-color: green;
+    border: 1px solid white; }
+    .msc-espiritualidad .ref .img-ref {
+      width: 100%; }
+      .msc-espiritualidad .ref .img-ref img {
+        width: 100%; }
+  .msc-espiritualidad .msc-homi {
+    width: 50%;
+    background-color: green; }
+  .msc-espiritualidad .msc-ref {
+    width: 50%;
+    background-color: orange; }
+
+/*----- de Web Flow -------------------- */
+.portada-iglesias {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center; }
+  .portada-iglesias .tit-portada-iglesias-msc {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center; }
+  .portada-iglesias .iglesias {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: space-around;
+    background-color: red; }
+    .portada-iglesias .iglesias .mc-churchs {
+      width: 50%;
+      background-color: green;
+      height: 150px; }
+      .portada-iglesias .iglesias .mc-churchs img {
+        width: 100%; }
+  .portada-iglesias .msc-portada {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-image: url("../images/cover.png"); }
+    .portada-iglesias .msc-portada .foto-portada {
+      padding-bottom: 20px;
+      width: 70%; }
+      .portada-iglesias .msc-portada .foto-portada .cover-title {
+        width: 100%;
+        margin: 40px auto 30px auto;
+        padding: 0px;
+        box-sizing: border-box; }
+        .portada-iglesias .msc-portada .foto-portada .cover-title h1 {
+          width: 100%;
+          color: #ffffff;
+          font-size: 60px;
+          display: block;
+          text-align: center;
+          padding: 0px; }
+        .portada-iglesias .msc-portada .foto-portada .cover-title h2 {
+          width: 100%;
+          color: #f7b32b;
+          font-size: 30px;
+          display: block;
+          text-align: center;
+          padding: 0px; }
+      .portada-iglesias .msc-portada .foto-portada .contenido {
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        font-size: 1.0625em;
+        line-height: 1.625em;
+        text-align: center; }
+      .portada-iglesias .msc-portada .foto-portada .ingresar {
+        background-color: #f7b32b;
+        margin: 20px auto 0px auto;
+        padding: 1em 1.5em;
+        text-align: center;
+        display: block;
+        color: #ffffff;
+        width: 25%;
+        border-radius: 5px;
+        text-decoration: none; }
+        .portada-iglesias .msc-portada .foto-portada .ingresar:hover {
+          background-color: #293449;
+          color: #f7b32b;
+          transition: 0.5s ease; }
 
 .tc-iconos {
   display: flex;

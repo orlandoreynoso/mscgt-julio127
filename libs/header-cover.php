@@ -2,7 +2,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-
 				<?php include (TEMPLATEPATH . '/libs/menu-cover.php');  ?>			
 			<div class="cover-title">
 				<h1>PARROQUIA</h1>

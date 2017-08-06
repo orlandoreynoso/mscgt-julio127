@@ -50,3 +50,108 @@
 		font-size: 1.0625em
 		line-height: 1.625em
 		text-align: center
+
+/*============== try =============================*/
+.msc-espiritualidad
+	background-color: red
+	display: flex
+	box-sizing: border-box
+	.ref
+		width: calc(100%/3)
+		background-color: green
+		border: 1px solid white
+		.img-ref
+			width: 100%
+			img
+				width: 100%
+	.msc-homi
+		width: 50%
+		background-color: green
+	.msc-ref
+		width: 50%
+		background-color: orange
+/*----- de Web Flow --------------------*/
+.portada-iglesias
+	display: flex
+	width: 100%
+	flex-wrap: wrap
+	align-content: center
+	.tit-portada-iglesias-msc
+		display: flex
+		width: 100%
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+	.iglesias
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		flex-wrap: wrap
+		align-items: baseline
+		align-content: space-around
+		background-color: red
+		.mc-churchs
+			width: 50%
+			background-color: green
+			height: 150px
+			img
+				width: 100%
+	.msc-portada
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+		background-position: 50% 50%
+		background-size: cover
+		background-image: url("../images/cover.png")
+		.foto-portada
+			padding-bottom: 20px
+			width: 70%
+			.cover-title
+				width: 100%
+				margin: 40px auto 30px auto
+				padding: 0px
+				box-sizing: border-box
+				h1
+					width: 100%
+					color: $mc-blanco
+					font-size: 60px
+					display: block
+					text-align: center
+					padding: 0px	
+				h2
+					width: 100%
+					color: $mc-amarillo
+					font-size: 30px
+					display: block
+					text-align: center
+					padding: 0px			
+			.contenido
+				font-family: $opensans
+				color: $mc-blanco
+				font-size: 1.0625em
+				line-height: 1.625em
+				text-align: center		
+			.ingresar				
+				background-color: $mc-amarillo
+				margin: 20px auto 0px auto
+				padding: 1.0em 1.5em
+				text-align: center
+				display: block
+				color: $mc-blanco
+				width: 25%
+				border-radius: 5px
+				text-decoration: none
+				&:hover
+					background-color: $mc-azul
+					color: $mc-amarillo
+					transition: 0.5s ease
+
+
+
+

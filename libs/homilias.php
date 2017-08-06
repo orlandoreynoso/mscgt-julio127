@@ -14,9 +14,9 @@ $the_query = new WP_Query(create_page($page_actually,$perpage_actually));
 <div class="actual col-xs-12 col-md-4">
     <?php 
 
-    $id = get_permalink($page_actually);
+    $pageid = get_permalink($page_actually);
     $title = get_the_title($page_actually);
-    echo $pageid;
+  //  echo $pageid;
     ?>   
 
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

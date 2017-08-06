@@ -4,6 +4,9 @@ define('TEMPPATH',get_bloginfo('stylesheet_directory'));
 /*En esto concatenamos la carpeta images*/
 define('IMAGES',TEMPPATH. "/images");
 //define('HOME',bloginfo('url' ));
+
+include (TEMPLATEPATH. '/inc/estilos.php');
+
 // Esto es para aderir una imágen destacada.
 add_theme_support('post-thumbnails');
 //add_image_size( $name, $width, $height, $crop );
@@ -15,6 +18,10 @@ the_post_thumbnail('medium');          // Tamaño de la mediano 300x300 píxeles
 the_post_thumbnail('large');   
 the_post_thumbnail('full'); // La resolución original
 //set_post_thumbnail_size(1024,1024,true );
+
+
+
+
 
 
 

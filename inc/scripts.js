@@ -13,5 +13,14 @@ $(document).ready(function() {
 	var nombre = "orlando reynoso";
   //  console.log("Cargado completamente ");
   // alert(nombre);
+	$(window).scroll(function() {
+		/* Act on the event */
+		var scroll = $(window).scrollTop();
+		if(scroll >= 350){
+			//console.log("llego a 300px");
+		}
+		else{
 
+				}
+	});
 });

@@ -1,16 +1,16 @@
-<?php 
+<?php
 include get_template_directory().'/libs/headermeta.php';
 ?>
 <body>
-<?php  
- /*	
+<?php
+ /*
 Cargamos el logo y el buscador
- include (TEMPLATEPATH . '/libs/header-logo-buscador.php');   
+ include (TEMPLATEPATH . '/libs/header-logo-buscador.php');
  */
  ?>
-<?php 
+<?php
 	if (is_page('Inicio')){
-		include (TEMPLATEPATH . '/libs/header-cover.php'); 
+		include (TEMPLATEPATH . '/libs/header-cover.php');
 		//1305 es el ID para tres consejos
 	}
 	if(is_page('tres-consejos')) {

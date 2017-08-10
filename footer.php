@@ -15,6 +15,7 @@
 		</div>
 	</footer>
 	<!-- script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/jquery-3.1.1.min.js'></script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<?php wp_footer(); ?>
 </body>
 </html>

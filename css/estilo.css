@@ -4,6 +4,31 @@
   color: #ffffff;
   font-family: "oswaldbold"; }
 
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif; }
+
+header {
+  width: 100%;
+  background-color: #ffffff; }
+
+.msc817-cover {
+  background-color: red;
+  padding: 20px; }
+  .msc817-cover .msc817-cover-title {
+    width: 100%; }
+  .msc817-cover .msc817-contenido {
+    width: 100%; }
+
 .tc-iconos {
   display: flex;
   flex-flow: row wrap;

@@ -8,9 +8,11 @@ Cargamos el logo y el buscador
  include (TEMPLATEPATH . '/libs/header-logo-buscador.php');
  */
  ?>
+<section>
 <?php
+
 	if (is_page('Inicio')){
-		include (TEMPLATEPATH . '/libs/header-cover.php');
+		include (TEMPLATEPATH . '/template/header/header-cover.php');
 		//1305 es el ID para tres consejos
 	}
 	if(is_page('tres-consejos')) {
